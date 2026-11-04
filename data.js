@@ -19,6 +19,14 @@
 //   Slug cũng là tên thư mục ảnh/video: images/<slug>/ và videos/<slug>/.
 // - nguon: mảng URL nguồn công khai dùng để tra cứu hồ sơ (trường nội
 //   bộ phục vụ kiểm chứng, giao diện không bắt buộc hiển thị).
+// - maSo: mã số của hồ sơ trong danh mục nguồn do user trích xuất
+//   (đợt 3 có các mã #206–#238); không phải hồ sơ nào cũng có trường này.
+// - soVideo: số lượng video của hồ sơ trong danh mục nguồn do user
+//   trích xuất (bắt đầu xuất hiện ở đợt 4); không phải hồ sơ nào cũng
+//   có trường này.
+// - maSoThem: mảng các mã số PHỤ trong danh mục nguồn trỏ về cùng một
+//   người dưới nghệ danh khác (bắt đầu xuất hiện ở đợt 6); chỉ hồ sơ
+//   nào bị trùng người mới có trường này.
 // - Các lưu ý về mâu thuẫn giữa các nguồn: xem GHI-CHU-DU-LIEU.md.
 // ============================================================
 
@@ -62,6 +70,8 @@ const HO_SO = [
   },
   {
     slug: "enami-ryu",
+    maSo: 173, // mã số trong danh mục nguồn — user đối chiếu ở đợt 4, hồ sơ này đã có từ đợt 1
+    soVideo: 95, // số video trong danh mục nguồn
     tenDayDu: "Enami Ryū (江波りゅう)",
     tenThuongGoi: "Ryu Enami",
     ngaySinh: "1982-07-16",
@@ -661,6 +671,7 @@ const HO_SO = [
   },
   {
     slug: "kazama-yumi",
+    maSo: 228, // mã số trong danh mục nguồn — user đối chiếu ở đợt 3, hồ sơ này đã có từ đợt 2
     tenDayDu: "Kazama Yumi (風間ゆみ)",
     tenThuongGoi: "Kazama Yumi (biến thể: Yume Kazama)",
     ngaySinh: "1979-01-31", // theo Wikipedia JA; blog chính thức ghi biến thể 1979-02-22 — xem GHI-CHU-DU-LIEU.md
@@ -678,6 +689,1164 @@ const HO_SO = [
     nguon: [
       "https://ja.wikipedia.org/wiki/風間ゆみ",
       "https://www.grajapa.shueisha.co.jp/talent/1105/風間ゆみ"
+    ]
+  },
+
+  // ================= ĐỢT 3 =================
+  {
+    slug: "narimiya-harua",
+    maSo: 206,
+    tenDayDu: "Narimiya Harua (成宮はるあ)",
+    tenThuongGoi: "Harua Narimiya",
+    ngaySinh: "1991-07-30", // theo Wikipedia JA; Wikidata/FANZA Guide ghi biến thể 1992-07-30 — xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LIGHT",
+    chieuCao: 163, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "97–58–87",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/nogiHARU_LIGHT" }
+    ],
+    tieuSu: "Diễn viên AV. Tên hoạt động hiện tại: Nogi Haruka (乃木はるか).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/成宮はるあ"
+    ]
+  },
+  {
+    slug: "minami-airi",
+    maSo: 208,
+    tenDayDu: "Minami Airi (みなみ愛梨)",
+    tenThuongGoi: "Airi Minami",
+    ngaySinh: "1991-07-20",
+    queQuan: "Fukuoka",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "kawaii*",
+    chieuCao: 155, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–56–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ: nguồn FANZA Guide + TMDB, chưa có Wikipedia — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://fanza-guide.jp/actress/minami_airi",
+      "https://www.themoviedb.org/person/1300983"
+    ]
+  },
+  {
+    slug: "kisaki-aya",
+    maSo: 211,
+    tenDayDu: "Kisaki Aya (希咲あや)",
+    tenThuongGoi: "Aya Kisaki",
+    ngaySinh: "1989-11-26",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Cielo",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "87–56–88",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/kisaki_aya" },
+      { ten: "Instagram", url: "https://www.instagram.com/kisaki_aya" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/希咲あや"
+    ]
+  },
+  {
+    slug: "anjo-anna",
+    maSo: 213,
+    tenDayDu: "Anjo Anna (安城アンナ)",
+    tenThuongGoi: "Anna Anjo",
+    ngaySinh: "1991-11-01",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Sunpro",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–58–83",
+    mangXaHoi: [], // tài khoản MXH cũ đã xóa
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/安城アンナ"
+    ]
+  },
+  {
+    slug: "nakajima-kyoko",
+    maSo: 214,
+    tenDayDu: "Nakajima Kyoko (中島京子)",
+    tenThuongGoi: "Kyoko Nakajima",
+    ngaySinh: "1983-03-12",
+    queQuan: "Saitama",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "h.m.p / Million",
+    chieuCao: 152, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–58–86",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/kyonnakajima" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/中島京子_(AV女優)"
+    ]
+  },
+  {
+    slug: "sakazaki-miho",
+    maSo: 215,
+    tenDayDu: "Sakazaki Miho (坂咲みほ)",
+    tenThuongGoi: "Mihono",
+    ngaySinh: "1994-07-20",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LINX",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "82–56–84",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/sakazakimiho" }
+    ],
+    tieuSu: "Diễn viên AV. Chuỗi nghệ danh: Sakaguchi Mihono (坂口みほの) → Mihono (みほの, từ năm 2015) → Sakazaki Miho (坂咲みほ).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/坂咲みほ",
+      "https://pub.linx.live/contents/model/4689/"
+    ]
+  },
+  {
+    slug: "oda-mako",
+    maSo: 216,
+    tenDayDu: "Oda Mako (織田真子)",
+    tenThuongGoi: "Mako Oda",
+    ngaySinh: "1983-12-17",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-Powers",
+    chieuCao: 152, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "92–61–89",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/odamako1217" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://www.t-powers.co.jp/talent/織田真子/",
+      "https://ja.wikipedia.org/wiki/織田真子"
+    ]
+  },
+  {
+    slug: "ninomiya-nana",
+    maSo: 217,
+    tenDayDu: "Ninomiya Nana (二宮ナナ)",
+    tenThuongGoi: "Nana Ninomiya",
+    ngaySinh: "1992-05-10",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-Powers",
+    chieuCao: 154, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–57–83",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/二宮ナナ"
+    ]
+  },
+  {
+    slug: "tomoda-ayaka",
+    maSo: 218,
+    tenDayDu: "Tomoda Ayaka (友田彩也香)",
+    tenThuongGoi: "Ayaka Tomoda",
+    ngaySinh: "1988-09-14",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Diaz Group",
+    chieuCao: 160, // cm
+    canNang: 45, // kg
+    soDo: "85–60–85",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/tomodaayaka" },
+      { ten: "Instagram", url: "https://www.instagram.com/ayaka_tomoda0914" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/友田彩也香"
+    ]
+  },
+  {
+    slug: "omomo-risa",
+    maSo: 219,
+    tenDayDu: "Ōmomo Risa (大桃りさ)",
+    tenThuongGoi: "Risa Oomomo",
+    ngaySinh: "1992-08-23",
+    queQuan: "", // chưa có nguồn chính thức xác nhận quê quán — xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Bambi Promotion",
+    chieuCao: 143, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–55–82",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/大桃りさ"
+    ]
+  },
+  {
+    slug: "hara-chitose",
+    maSo: 220,
+    tenDayDu: "Hara Chitose (原ちとせ)",
+    tenThuongGoi: "Chitose Hara",
+    ngaySinh: "1977-04-21",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Diana Production",
+    chieuCao: 159, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–60–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/原ちとせ"
+    ]
+  },
+  {
+    slug: "hayakawa-mizuki",
+    maSo: 221,
+    tenDayDu: "Hayakawa Mizuki (早川瑞希)",
+    tenThuongGoi: "Wakamiya Hazuki",
+    ngaySinh: "1993-11-09",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Bambi Promotion",
+    chieuCao: 162, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–60–88", // bộ số liệu thời Hayakawa Mizuki; bộ công bố lại thời Wakamiya xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/wakamiyahazuki" },
+      { ten: "X (Twitter) — tài khoản cũ", url: "https://x.com/MizukiHayakawa" }
+    ],
+    tieuSu: "Diễn viên AV. Đổi nghệ danh thành Wakamiya Hazuki (若宮はずき) vào tháng 07/2020 — cùng một người; số liệu trong hồ sơ là bộ thời Hayakawa Mizuki.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/若宮はずき"
+    ]
+  },
+  {
+    slug: "otowa-reon",
+    maSo: 222,
+    tenDayDu: "Otowa Reon (音羽レオン)",
+    tenThuongGoi: "Reon Otowa",
+    ngaySinh: "1990-01-11",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Grants Pro",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–58–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://fanza-guide.jp/actress/otowa_reon"
+    ]
+  },
+  {
+    slug: "mihara-honoka",
+    maSo: 223,
+    tenDayDu: "Mihara Honoka (三原ほのか)",
+    tenThuongGoi: "Honoka Mihara",
+    ngaySinh: "1994-05-01",
+    queQuan: "Saitama",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "New Gate",
+    chieuCao: 156, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–58–85",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/miharahonoka" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/三原ほのか"
+    ]
+  },
+  {
+    slug: "motozawa-tomomi",
+    maSo: 224,
+    tenDayDu: "Motozawa Tomomi (本澤朋美)",
+    tenThuongGoi: "Tomomi Motozawa",
+    ngaySinh: "1992-11-28",
+    queQuan: "", // không công bố quê quán — xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Life Promotion",
+    chieuCao: 153, // cm
+    canNang: 56, // kg
+    soDo: "80–58–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/本澤朋美"
+    ]
+  },
+  {
+    slug: "aizawa-karin",
+    maSo: 225,
+    tenDayDu: "Aizawa Karin (愛沢かりん)",
+    tenThuongGoi: "Karin Aizawa",
+    ngaySinh: "1993-12-26",
+    queQuan: "Nara",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "", // chưa rõ công ty quản lý công khai
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–57–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://fanza-guide.jp/actress/aizawa_karin"
+    ]
+  },
+  {
+    slug: "ayase-tiara",
+    maSo: 226,
+    tenDayDu: "Ayase Tiara (綾瀬ティアラ)",
+    tenThuongGoi: "Tiara Ayase",
+    ngaySinh: "1991-03-03",
+    queQuan: "", // Wikipedia JA chỉ ghi Nhật Bản, không nêu tỉnh/thành — xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "h.m.p",
+    chieuCao: 167, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–59–87",
+    mangXaHoi: [
+      { ten: "Blog (Ameblo)", url: "https://ameblo.jp/tiara-ayase/" }
+    ],
+    tieuSu: "Cựu diễn viên AV. Nghệ danh sau năm 2012: Kurosaki Cecil (黒崎セシル).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/綾瀬ティアラ"
+    ]
+  },
+  {
+    slug: "yuuki-aoi",
+    maSo: 227,
+    tenDayDu: "Yuuki Aoi (優木あおい)",
+    tenThuongGoi: "Aoi Yuuki",
+    ngaySinh: "1988-03-09",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Cheeseburger",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–58–83",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/bussan0309" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. Lưu ý: không phải diễn viên lồng tiếng Aoi Yūki (悠木碧) — đây là hai người khác nhau.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/優木あおい"
+    ]
+  },
+  {
+    slug: "ozawa-alice",
+    maSo: 230,
+    tenDayDu: "Ozawa Alice (小沢アリス)",
+    tenThuongGoi: "Alice Ozawa",
+    ngaySinh: "1990-10-20",
+    queQuan: "Hyogo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "FUNIT! Entertainment",
+    chieuCao: 167, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "100–61–89",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/ozawaalice" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ: nguồn EverybodyWiki + AV DB, chưa có Wikipedia JA chính thức — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://ja.everybodywiki.com/小沢アリス",
+      "https://av-db.net/actress/ozawaarisu"
+    ]
+  },
+  {
+    slug: "akino-chihiro",
+    maSo: 236,
+    tenDayDu: "Akino Chihiro (秋野千尋)",
+    tenThuongGoi: "Chihiro Akino",
+    ngaySinh: "1973-02-07",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Wave Promotion",
+    chieuCao: 153, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–59–85", // Wikipedia JA tự gắn cờ số đo thiếu nguồn rõ ràng — xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/秋野千尋"
+    ]
+  },
+  {
+    slug: "julia",
+    maSo: 237,
+    tenDayDu: "JULIA (ジュリア)",
+    tenThuongGoi: "Julia Boin",
+    ngaySinh: "1987-05-25",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "C-more Entertainment",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "101–55–84",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/JULIA_1stid" },
+      { ten: "Instagram", url: "https://www.instagram.com/JULIA_official.account" }
+    ],
+    tieuSu: "Diễn viên AV. \"Boin\" trong tên user gửi (\"Julia Boin\") là nhãn series Boin Box của hãng Mousouzoku, không phải họ; một số CSDL AV ghi \"Julia Boin\" như biệt danh của JULIA.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/JULIA_(AV女優)",
+      "https://cmore.jp/julia/profile.html"
+    ]
+  },
+  {
+    slug: "kinoshita-himari",
+    maSo: 238,
+    tenDayDu: "Kinoshita Himari (木下ひまり)",
+    tenThuongGoi: "Himari Kinoshita",
+    ngaySinh: "1996-05-21",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "ACT Entertainment",
+    chieuCao: 169, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–60–85", // bộ số liệu của agency ACT hiện hành; bộ Wikipedia năm 2020 là 88–57–88 — xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/0521himari" },
+      { ten: "Instagram", url: "https://www.instagram.com/himari_kinoshita" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/木下ひまり",
+      "https://actentertainment.jp/himari-kinosita/"
+    ]
+  },
+
+  // ================= ĐỢT 4 =================
+  {
+    slug: "ohara-reina",
+    maSo: 174,
+    soVideo: 20,
+    tenDayDu: "Ohara Reina (大原伶菜)",
+    tenThuongGoi: "Reina Ohara",
+    ngaySinh: "2005-10-30", // khớp IMDb + hậu tố 1030 của Instagram; ReleaseIndex ghi biến thể 2005-04-07 — xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Idea Pocket",
+    chieuCao: 167, // cm — nguồn khác ghi 168, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "", // không công bố
+    mangXaHoi: [
+      { ten: "Instagram", url: "https://www.instagram.com/reinaohara_1030" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ: nguồn tổng hợp hạng trung — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://www.topstarlist.in/2026/09/reina-ohara-biography-age-height-real-name-instagram-reinaohara.html",
+      "https://releaseindex.app/performer/reina-ohara"
+    ]
+  },
+  {
+    slug: "mizuno-asahi",
+    maSo: 175,
+    soVideo: 12,
+    tenDayDu: "Mizuno Asahi (水野朝陽)",
+    tenThuongGoi: "Asahi Mizuno",
+    ngaySinh: "1990-11-12",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "C-more Entertainment",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–58–96",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/mizuno_asahi" },
+      { ten: "Instagram", url: "https://www.instagram.com/asahi_mizuno_" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/水野朝陽"
+    ]
+  },
+  {
+    slug: "sayama-ai",
+    maSo: 177,
+    soVideo: 1,
+    tenDayDu: "Sayama Ai (佐山愛)",
+    tenThuongGoi: "Ai Sayama",
+    ngaySinh: "1989-01-08",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "98–61–90",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/aisayama" },
+      { ten: "Instagram", url: "https://www.instagram.com/ai_sayama0108" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. Tuyên bố giải nghệ vào tháng 09/2025.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/佐山愛"
+    ]
+  },
+  {
+    slug: "sakata-mikage",
+    maSo: 179,
+    soVideo: 19,
+    tenDayDu: "Sakata Mikage (坂田美影)",
+    tenThuongGoi: "Mikage Sakata",
+    ngaySinh: "1981-05-16",
+    queQuan: "Kanagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Bardo Agency",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–63–90",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/坂田美影"
+    ]
+  },
+  {
+    slug: "saionji-reo",
+    maSo: 180,
+    soVideo: 51,
+    tenDayDu: "Saionji Reo (西園寺れお)",
+    tenThuongGoi: "Reo Saionji",
+    ngaySinh: "1991-09-14",
+    queQuan: "Chiba",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Style One",
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "82–58–82",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/西園寺れお"
+    ]
+  },
+  {
+    slug: "onodera-risa",
+    maSo: 184,
+    soVideo: 17,
+    tenDayDu: "Onodera Risa (小野寺梨紗)",
+    tenThuongGoi: "Risa Onodera",
+    ngaySinh: "1997-01-25",
+    queQuan: "Ibaraki",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "MMR合同",
+    chieuCao: 163, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–58–90",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/RisaOnodera" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/小野寺梨紗"
+    ]
+  },
+  {
+    slug: "tojo-natsu",
+    maSo: 185,
+    soVideo: 173,
+    tenDayDu: "Tojo Natsu (東條なつ)",
+    tenThuongGoi: "Natsu Tojo",
+    ngaySinh: "1999-08-19",
+    queQuan: "Tochigi",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LINX",
+    chieuCao: 156, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "78–55–85",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/_tojo_natsu" },
+      { ten: "Instagram", url: "https://www.instagram.com/tojonatsu" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/東條なつ"
+    ]
+  },
+  {
+    slug: "maisaki-mikuni",
+    maSo: 190,
+    soVideo: 78,
+    tenDayDu: "Maisaki Mikuni (舞咲みくに)",
+    tenThuongGoi: "Mikuni Maisaki",
+    ngaySinh: "1991-09-02", // fan wiki ghi biến thể 1991-07-20 — không dùng, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Hyogo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Idea Pocket",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "85–59–87",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/mikuni0920" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/舞咲みくに"
+    ]
+  },
+  {
+    slug: "uchimura-rina",
+    maSo: 193,
+    soVideo: 43,
+    tenDayDu: "Uchimura Rina (内村りな)",
+    tenThuongGoi: "Rina Uchimura",
+    ngaySinh: "1993-05-08",
+    queQuan: "Chiba",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "All Promotion",
+    chieuCao: 154, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–58–85",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/uchimura_rina" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/内村りな"
+    ]
+  },
+  {
+    slug: "otsuka-saki",
+    maSo: 194,
+    soVideo: 65,
+    tenDayDu: "Otsuka Saki (大塚咲)",
+    tenThuongGoi: "Saki Otsuka",
+    ngaySinh: "1984-10-01",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "", // chưa rõ công ty quản lý công khai
+    chieuCao: 158, // cm
+    canNang: 49, // kg
+    soDo: "90–58–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Hiện làm nhiếp ảnh gia, họa sĩ và người mẫu, hoạt động trên note với tên otsukasaki.",
+    nguon: [
+      "https://www.weblio.jp/content/大塚咲"
+    ]
+  },
+  {
+    slug: "mihoshi-ruka",
+    maSo: 195,
+    soVideo: 59,
+    tenDayDu: "Mihoshi Ruka (美星るか)",
+    tenThuongGoi: "Ruka Mihoshi",
+    ngaySinh: "1994-11-06",
+    queQuan: "", // không công bố quê quán — xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "kawaii*",
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "76–56–80",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ: nguồn Seesaa Wiki + trang tổng hợp — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://seesaawiki.jp/av_neme/d/%c8%fe%c0%b1%a4%eb%a4%ab",
+      "https://javrate.com/actor/detail/17c024f0-7bc6-4e7b-9b10-1d2287ad92c7.html"
+    ]
+  },
+  {
+    slug: "shino-megumi",
+    maSo: 196,
+    soVideo: 197,
+    tenDayDu: "Shino Megumi (篠めぐみ)",
+    tenThuongGoi: "Aoi Shino",
+    ngaySinh: "1990-09-08",
+    queQuan: "Tochigi",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "WAVE Promotion",
+    chieuCao: 163, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–58–85",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/shino_aoi0908" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. Từ năm 2012 đổi nghệ danh thành Aoi Shino (碧しの); giải nghệ vào tháng 11/2019.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/碧しの"
+    ]
+  },
+  {
+    slug: "suzuha-miu",
+    maSo: 197,
+    soVideo: 102,
+    tenDayDu: "Suzuha Miu (鈴羽みう)",
+    tenThuongGoi: "Miu Suzuha",
+    ngaySinh: "1989-09-25",
+    queQuan: "Saitama",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 148, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "", // không công bố
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/鈴羽みう"
+    ]
+  },
+  {
+    slug: "kimijima-mio",
+    maSo: 199,
+    soVideo: 123,
+    tenDayDu: "Kimijima Mio (君島みお)",
+    tenThuongGoi: "Mio Kimijima",
+    ngaySinh: "1988-04-25", // hồ sơ thời tên cũ Kyōmoto Kaede ghi biến thể khác — xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tochigi",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 162, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "92–55–88",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/mio_kimijima" },
+      { ten: "Instagram", url: "https://www.instagram.com/mio.kimijima_" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/君島みお"
+    ]
+  },
+  {
+    slug: "yokoyama-mirei",
+    maSo: 200,
+    soVideo: 81,
+    tenDayDu: "Yokoyama Mirei (横山みれい)",
+    tenThuongGoi: "Mirei Yokoyama",
+    ngaySinh: "1985-11-23", // nguồn Trung Quốc ghi biến thể 1983 — không dùng, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Tự do",
+    chieuCao: 162, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "93–57–83",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/mirei_y" },
+      { ten: "Instagram", url: "https://www.instagram.com/mireichan66" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/横山みれい"
+    ]
+  },
+  {
+    slug: "tachibana-mary",
+    maSo: 203,
+    soVideo: 58,
+    tenDayDu: "Tachibana Mary (橘メアリー)",
+    tenThuongGoi: "Mary Tachibana",
+    ngaySinh: "1993-07-07",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LIGHT",
+    chieuCao: 168, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "99–63–94",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/mary_tachibana" },
+      { ten: "Instagram", url: "https://www.instagram.com/tachibanamary" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/橘メアリー"
+    ]
+  },
+  {
+    slug: "kuroki-kotone",
+    maSo: 204,
+    soVideo: 51,
+    tenDayDu: "Kuroki Kotone (黒木琴音)",
+    tenThuongGoi: "Kotone Kuroki",
+    ngaySinh: "1972-07-30", // theo Wikidata; Seesaa Wiki ghi biến thể 1972-06-10 — xem GHI-CHU-DU-LIEU.md
+    queQuan: "", // không công bố quê quán — xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "", // chưa rõ công ty quản lý công khai
+    chieuCao: 160, // cm — nguồn khác ghi 166, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "95–60–93",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ: nguồn Seesaa Wiki + Wikidata, có lệch dữ kiện — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://seesaawiki.jp/av_video/d/%b9%f5%cc%da%b6%d7%b2%bb",
+      "https://m.wikidata.org/wiki/Q20038353"
+    ]
+  },
+  {
+    slug: "hazuki-mion",
+    maSo: 205,
+    soVideo: 36,
+    tenDayDu: "Hazuki Mion (葉月美音)",
+    tenThuongGoi: "Mion Hazuki",
+    ngaySinh: "1990-10-24",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "GG",
+    chieuCao: 145, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "93–59–90",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/MionHazuki" },
+      { ten: "Instagram", url: "https://www.instagram.com/mion_hazuki" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. Tên cũ: Natsukawa Yuka, Yamagishi Yuka.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/葉月美音"
+    ]
+  },
+  {
+    slug: "koizumi-nozomi",
+    maSo: 167,
+    soVideo: 69,
+    tenDayDu: "Koizumi Nozomi (小泉のぞみ)",
+    tenThuongGoi: "Nozomi Koizumi",
+    ngaySinh: "1990-07-28",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "", // chưa rõ công ty quản lý công khai
+    chieuCao: 163, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–57–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, debut đầu năm 2012 tại Tokyo-Hot. Còn hoạt động dưới các tên Sugisaki Haruka (杉崎晴香) và Nakagawa Shiori (那珂川詩織).",
+    doTinCay: "trung-binh", // cờ nội bộ: nguồn trang tổng hợp + hồ sơ hãng — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://kutikomiya.jp/av-idol/koizumi-nozomi/",
+      "https://ryoseiki.jp/movie/tonetsu06.html",
+      "https://www.javrate.com/actor/movie/6726d16d-bae2-4200-b603-47785d4b0e6e.html"
+    ]
+  },
+  {
+    slug: "sakuragi-rin",
+    maSo: 168,
+    soVideo: 51,
+    tenDayDu: "Sakuragi Rin (桜木凛)",
+    tenThuongGoi: "Rino Sakuragi",
+    ngaySinh: "1989-03-03",
+    queQuan: "Hyogo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Prime Agency",
+    chieuCao: 158, // cm
+    canNang: "", // số 46 kg chỉ có trên trang tổng hợp — không dùng, xem GHI-CHU-DU-LIEU.md
+    soDo: "83–57–82",
+    mangXaHoi: [
+      { ten: "X (Twitter)", url: "https://x.com/rin0303rin" }
+    ],
+    tieuSu: "Cựu diễn viên AV người Nhật, cựu thành viên nhóm Ebisu Muscats thế hệ 2, giải nghệ AV năm 2017.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/桜木凛",
+      "https://thetv.jp/person/1000071695/"
+    ]
+  },
+  {
+    slug: "tanaka-nene",
+    maSo: 171,
+    soVideo: 87,
+    tenDayDu: "Tanaka Nene (田中ねね)",
+    tenThuongGoi: "Nene Tanaka",
+    ngaySinh: "1999-09-20",
+    queQuan: "", // chỉ nguồn phụ ghi Tokyo — không dùng, xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "KRONE",
+    chieuCao: 151, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "97–60–90",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, debut năm 2020 tại SOD Create. Biệt danh khác: Maeda Neo (前田音緒).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/田中ねね",
+      "https://fanza-actress.com/actress/1060480"
+    ]
+  },
+  {
+    slug: "orihara-honoka",
+    maSo: 172,
+    soVideo: 101,
+    maSoThem: [28], // mục #28 "Akai Mitsuki" trong danh mục nguồn là chính cô thời 2012–2014 — gộp, xem GHI-CHU đợt 6
+    tenDayDu: "Orihara Honoka (折原ほのか)",
+    tenThuongGoi: "Honoka Orihara",
+    ngaySinh: "1992-09-22",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Alvirosso",
+    chieuCao: 154, // cm — nguồn phụ ghi 153, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "92–60–95",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, xuất thân gravure idol. Debut AV năm 2012 dưới tên Akai Mitsuki (赤井美月), đổi tên thành Orihara Honoka năm 2015; từ năm 2020 còn hoạt động dưới tên Kannazuki Rena (神無月れな).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/折原ほのか",
+      "https://www.wikidata.org/wiki/Q22130039"
+    ]
+  },
+
+  // ================= ĐỢT 6 =================
+  {
+    slug: "hatano-yui",
+    maSo: 4,
+    soVideo: 321,
+    tenDayDu: "Hatano Yui (波多野結衣)",
+    tenThuongGoi: "Yui Hatano",
+    ngaySinh: "1988-05-24",
+    queQuan: "Kyoto", // theo hồ sơ chính thức — cô từng chia sẻ thực tế là Okayama, xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 163, // cm
+    canNang: 48, // kg, số liệu Wikipedia 2026
+    soDo: "93–59–103", // theo hồ sơ agency hiện hành — số đo cũ 88–59–85, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV kỳ cựu người Nhật, debut năm 2008, hơn 3.000 tác phẩm; thành viên nhóm T♡Project.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/波多野結衣",
+      "https://www.t-powers.co.jp/talent/波多野結衣/"
+    ]
+  },
+  {
+    slug: "ichinose-suzu",
+    maSo: 8,
+    soVideo: 79,
+    tenDayDu: "Ichinose Suzu (一之瀬すず)",
+    tenThuongGoi: "Suzu Ichinose",
+    ngaySinh: "1995-03-29",
+    queQuan: "Akita", // chỉ có ở Wikipedia bản Trung, bản Nhật không ghi — xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Hustler",
+    chieuCao: 149, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "73–56–82",
+    mangXaHoi: [],
+    tieuSu: "Cựu diễn viên AV người Nhật, hoạt động 2013–2014, đã giải nghệ.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/一之瀬すず"
+    ]
+  },
+  {
+    slug: "ohashi-miku",
+    maSo: 14,
+    soVideo: 74,
+    tenDayDu: "Ohashi Miku (大橋未久)",
+    tenThuongGoi: "Miku Ohashi",
+    ngaySinh: "1987-12-24",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–58–85",
+    mangXaHoi: [],
+    tieuSu: "Cựu diễn viên AV người Nhật, debut năm 2007 tại kawaii*, sau là trụ cột của MOODYZ, giải nghệ năm 2014.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/大橋未久"
+    ]
+  },
+  {
+    slug: "fukada-eimi",
+    maSo: 16,
+    soVideo: 28,
+    tenDayDu: "Fukada Eimi (深田えいみ)",
+    tenThuongGoi: "Eimi Fukada",
+    ngaySinh: "1998-03-18",
+    queQuan: "Tochigi", // vài nguồn ghi Saitama — xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Mine's",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–59–91", // theo agency Mine's — số đo thực đo 2020 là 87.8–63.5–91.1, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "Website chính thức", url: "https://fukadaeimi.com" }
+    ],
+    tieuSu: "Diễn viên AV, YouTuber và doanh nhân người Nhật; cựu idol dưới tên Amami Kokoro (天海こころ).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/深田えいみ",
+      "http://mines-pro.jp/model/10953"
+    ]
+  },
+  {
+    slug: "rae-lil-black",
+    maSo: 18,
+    soVideo: 146,
+    tenDayDu: "Rae Lil Black",
+    tenThuongGoi: "",
+    ngaySinh: "1996-08-17",
+    queQuan: "Osaka",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: "", // không có nguồn chính thức — xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "", // không có nguồn chính thức — xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Cựu diễn viên AV người Nhật hoạt động quốc tế, nay là influencer/streamer với tên Nuray Istiqbal. Tên thật chưa từng được cô công khai chính thức nên hồ sơ chỉ dùng nghệ danh; chiều cao và số đo không có nguồn chính thức nên để trống.",
+    doTinCay: "trung-binh", // cờ nội bộ: không có Wikipedia/agency Nhật, ngày sinh + quê Osaka thống nhất trên nhiều nguồn tiếng Anh — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://www.thecityceleb.com/biography/celebrity/actress/rae-lil-black-biography-age-height-net-worth-religion-ethnicity-real-name-boyfriend/"
+    ]
+  },
+  {
+    slug: "kobayakawa-reiko",
+    maSo: 22,
+    soVideo: 97,
+    tenDayDu: "Kobayakawa Reiko (小早川怜子)",
+    tenThuongGoi: "Reiko Kobayakawa",
+    ngaySinh: "1982-11-17",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Capsule Agency",
+    chieuCao: 166, // cm — nhiều CSDL ghi 165, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–60–95", // theo Wikipedia — nhiều CSDL ghi 88–60–89, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV dòng trưởng thành người Nhật, debut chính thức năm 2012.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/小早川怜子"
+    ]
+  },
+  {
+    slug: "ichiki-miho",
+    maSo: 23,
+    soVideo: 62,
+    tenDayDu: "Ichiki Miho (市来美保)",
+    tenThuongGoi: "Miho Ichiki",
+    ngaySinh: "1992-11-29",
+    queQuan: "Kanagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 164, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "105–56–86",
+    mangXaHoi: [],
+    tieuSu: "Cựu diễn viên AV người Nhật. Chuỗi nghệ danh: Himeno Yuuri (姫野ゆうり) → Ichiki Miho → Okina Anna (奥菜アンナ) → Azumi Nakama (仲間あずみ). Hồ sơ Wikipedia nằm dưới tên Okina Anna.",
+    nguon: [
+      "https://www.weblio.jp/content/奥菜アンナ",
+      "https://kutikomiya.jp/av-idol/ichiki-miho/"
+    ]
+  },
+  {
+    slug: "kimura-tsuna",
+    maSo: 24,
+    soVideo: 77,
+    tenDayDu: "Kimura Tsuna (木村つな)",
+    tenThuongGoi: "Tuna Kimura",
+    ngaySinh: "1993-03-15",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 151, // cm theo FANZA Guide — đa số CSDL ghi 149, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "81–58–86",
+    mangXaHoi: [],
+    tieuSu: "Cựu diễn viên AV người Nhật, debut năm 2012, ngừng hoạt động khoảng 2017. \"Tuna Kimura\" trong danh mục nguồn là cách đọc chệch romaji của Tsuna. Sau này dùng tên Kirimiya Ten (霧宮てん) trong cosplay.",
+    doTinCay: "trung-binh", // cờ nội bộ: nguồn FANZA Guide + TMDB, chưa có Wikipedia — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://fanza-guide.jp/actress/kimura_tuna",
+      "https://www.themoviedb.org/person/2364545"
+    ]
+  },
+  {
+    slug: "saeki-yukina",
+    maSo: 27,
+    soVideo: 55,
+    tenDayDu: "Saeki Yukina (佐伯ゆきな)",
+    tenThuongGoi: "Yukina Saeki",
+    ngaySinh: "1993-08-24",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 175, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "94–58–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, debut năm 2014, từng độc quyền h.m.p và E-BODY.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/佐伯ゆきな",
+      "https://www.wikidata.org/wiki/Q22128651"
+    ]
+  },
+  {
+    slug: "natsuki-maron",
+    maSo: 30,
+    soVideo: 119,
+    tenDayDu: "Natsuki Maron (夏希まろん)",
+    tenThuongGoi: "Maron Natsuki",
+    ngaySinh: "1996-12-25",
+    queQuan: "Tokyo", // theo Wikipedia — nguồn phụ ghi Fukuoka, xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Tự do",
+    chieuCao: 164, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–58–88", // theo đa số CSDL — Wikipedia ghi 88–53–88, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, cựu vũ công; từng qua T-POWERS, Krone, ARROWS (từng đổi tên Natsuyo Eru) và NAX, từ 08/2024 hoạt động tự do.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/夏希まろん"
     ]
   }
 
