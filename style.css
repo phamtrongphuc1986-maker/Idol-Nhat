@@ -1,0 +1,196 @@
+/* ===== Idol Nhật Bản — theme "Snapshot": nền đen + thẻ polaroid trắng ===== */
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #111111;
+  color: #ece9e6;
+  line-height: 1.5;
+}
+a { color: #f783ac; }
+
+.dau-trang {
+  background: #1b1b1b;
+  border-bottom: 1px solid #2e2e2e;
+  color: #f5f2ef;
+  padding: 22px 16px 16px;
+  text-align: center;
+}
+.dau-trang h1 { margin: 0; font-size: 1.6rem; }
+.dau-trang .phu-de { margin: 4px 0 0; opacity: .85; font-size: .95rem; color: #c9c2c9; }
+
+main { max-width: 1080px; margin: 0 auto; padding: 14px; }
+
+.chan-trang {
+  max-width: 1080px; margin: 10px auto 0; padding: 14px 16px 26px;
+  color: #8f8894; font-size: .85rem;
+}
+
+/* ===== Bộ lọc ===== */
+.bo-loc {
+  background: #1c1c1c; border: 1px solid #2e2e2e; border-radius: 14px;
+  padding: 12px; margin-bottom: 18px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .45);
+}
+.bo-loc input[type="search"] {
+  width: 100%; padding: 11px 12px; font-size: 1rem;
+  background: #262626; color: #f0edea;
+  border: 1px solid #3d3d3d; border-radius: 10px; margin-bottom: 10px;
+}
+.bo-loc input[type="search"]::placeholder { color: #9a939e; }
+.hang-loc { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 8px; }
+.hang-loc label { flex: 1 1 140px; font-size: .9rem; color: #c9c2c9; }
+.hang-loc select {
+  width: 100%; margin-top: 4px; padding: 9px;
+  background: #262626; color: #f0edea;
+  border: 1px solid #3d3d3d; border-radius: 10px; font-size: .95rem;
+}
+.hang-loc input[type="range"] { width: 100%; margin-top: 4px; accent-color: #f06595; }
+.ket-qua { margin: 4px 0 0; font-size: .88rem; color: #9a939e; }
+
+/* ===== Lưới thẻ hồ sơ — polaroid ===== */
+.luoi-the {
+  display: grid; gap: 18px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 6px 4px 10px;
+}
+@media (min-width: 640px) { .luoi-the { grid-template-columns: repeat(3, 1fr); gap: 20px; } }
+@media (min-width: 960px) { .luoi-the { grid-template-columns: repeat(4, 1fr); gap: 22px; } }
+
+.the {
+  position: relative; display: block; text-decoration: none; color: #26222a;
+  background: #ffffff; border-radius: 3px;
+  padding: 10px 10px 6px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .55), 0 2px 5px rgba(0, 0, 0, .5);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.luoi-the .the:nth-child(4n+1) { transform: rotate(-1.6deg); }
+.luoi-the .the:nth-child(4n+2) { transform: rotate(1.2deg); }
+.luoi-the .the:nth-child(4n+3) { transform: rotate(-0.7deg); }
+.luoi-the .the:nth-child(4n)   { transform: rotate(1.8deg); }
+.luoi-the .the:hover, .luoi-the .the:focus-visible {
+  transform: rotate(0deg) scale(1.04);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, .65), 0 4px 10px rgba(0, 0, 0, .55);
+  z-index: 3;
+}
+.the-anh {
+  aspect-ratio: 3 / 4; background: #ececec;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.the-anh img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.the-anh .chu-cai { font-size: 3rem; color: #d6336c; font-weight: 700; }
+.the-than { padding: 10px 4px 10px; }
+.the-than h3 { margin: 0; font-size: 1.02rem; color: #26222a; }
+.ten-goi { margin: 2px 0 0; color: #6b6570; font-size: .88rem; }
+.the-dong { margin: 8px 0 0; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: .88rem; color: #26222a; }
+.nhan-nghe {
+  background: #ffe3ee; color: #a61e4d; border-radius: 999px;
+  padding: 2px 9px; font-size: .8rem; font-weight: 600;
+}
+.the-que { margin: 6px 0 0; font-size: .88rem; color: #554e5c; }
+.nhan-mau {
+  position: absolute; top: 14px; left: 14px; z-index: 2;
+  background: #e03131; color: #fff; font-size: .72rem; font-weight: 700;
+  padding: 3px 8px; border-radius: 6px; letter-spacing: .4px;
+}
+.trong { color: #9a939e; padding: 18px 6px; }
+
+/* ===== Trang chi tiết ===== */
+.nut {
+  display: inline-block; background: #1f1f1f; border: 1px solid #3d3d3d; color: #f0edea;
+  padding: 8px 14px; border-radius: 10px; text-decoration: none; font-weight: 600;
+}
+.nut:hover { background: #2a2a2a; }
+.canh-bao-mau {
+  background: #3a1414; border: 1.5px dashed #e03131; color: #ffb3b3;
+  border-radius: 12px; padding: 12px 14px; margin: 12px 0; font-weight: 600;
+}
+.chi-tiet-dau { display: flex; gap: 18px; margin-top: 14px; align-items: flex-start; }
+.chi-tiet-anh {
+  width: 140px; flex: 0 0 140px; aspect-ratio: 3 / 4;
+  background: #ffffff; padding: 8px 8px 22px;
+  border-radius: 3px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .55);
+  transform: rotate(-2deg);
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+}
+.chi-tiet-anh img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.chi-tiet-anh .chu-cai { font-size: 2.6rem; color: #d6336c; font-weight: 700; }
+.chi-tiet-ten h2 { margin: 0; font-size: 1.45rem; color: #f5f2ef; }
+.chi-tiet-ten .ten-goi { font-size: 1rem; color: #b7b0ba; }
+.chi-tiet-ten .the-dong { color: #ece9e6; }
+.chi-tiet-ten .the-que { color: #c9c2c9; }
+
+.bang-thong-tin {
+  background: #1a1a1a; border: 1px solid #2e2e2e; border-radius: 14px;
+  padding: 6px 14px; margin: 14px 0;
+}
+.bang-thong-tin .dong { display: flex; gap: 10px; padding: 9px 0; border-bottom: 1px solid #2a2a2a; }
+.bang-thong-tin .dong:last-child { border-bottom: none; }
+.bang-thong-tin dt { flex: 0 0 42%; color: #9a939e; font-size: .92rem; }
+.bang-thong-tin dd { margin: 0; font-weight: 600; font-size: .95rem; color: #f0edea; }
+
+.tieu-su {
+  background: #1a1a1a; border: 1px solid #2e2e2e; border-radius: 14px;
+  padding: 12px 14px; color: #e6e1e6;
+}
+.mxh { display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0; }
+.mxh a {
+  background: #26222a; border: 1px solid #3d3d3d; color: #fff; text-decoration: none;
+  padding: 7px 13px; border-radius: 999px; font-size: .88rem; font-weight: 600;
+}
+
+/* ===== Thư viện ảnh — polaroid ===== */
+.nhom-anh h3 { margin: 20px 0 8px; font-size: 1.08rem; color: #f0edea; }
+.nhom-anh .dem-anh { color: #9a939e; font-size: .85rem; font-weight: 400; }
+.luoi-anh { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); padding: 4px 2px 8px; }
+@media (min-width: 760px) { .luoi-anh { grid-template-columns: repeat(5, 1fr); gap: 16px; } }
+.o-anh {
+  aspect-ratio: 3 / 4; background: #ffffff;
+  padding: 6px 6px 18px; border-radius: 3px;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .55);
+  display: flex; align-items: stretch; justify-content: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.luoi-anh .o-anh:nth-child(5n+1) { transform: rotate(-1.3deg); }
+.luoi-anh .o-anh:nth-child(5n+2) { transform: rotate(1deg); }
+.luoi-anh .o-anh:nth-child(5n+3) { transform: rotate(-0.6deg); }
+.luoi-anh .o-anh:nth-child(5n+4) { transform: rotate(1.4deg); }
+.luoi-anh .o-anh:nth-child(5n)   { transform: rotate(-1deg); }
+.luoi-anh .o-anh:hover {
+  transform: rotate(0deg) scale(1.04);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, .65);
+  z-index: 3;
+}
+.o-anh img { width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; }
+.o-trong {
+  border: 1.5px dashed #b9b2bd; border-radius: 2px; width: 100%; height: 100%;
+  background: #f2eff2;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; padding: 6px; color: #6b6570;
+}
+.o-trong span { font-size: .68rem; word-break: break-all; }
+.o-trong small { font-size: .72rem; margin-top: 4px; }
+
+/* ===== Video ===== */
+.khung-video { display: grid; gap: 12px; }
+@media (min-width: 760px) { .khung-video { grid-template-columns: repeat(2, 1fr); } }
+.video-phat {
+  width: 100%; border-radius: 4px; background: #000;
+  border: 1px solid #2e2e2e; box-shadow: 0 5px 14px rgba(0, 0, 0, .55);
+}
+code { background: #2a2a2a; color: #f3c2d3; padding: 1px 5px; border-radius: 5px; font-size: .85em; }
+
+/* ===== Lightbox ===== */
+.lightbox {
+  position: fixed; inset: 0; z-index: 50; background: rgba(0, 0, 0, .94);
+  display: flex; align-items: center; justify-content: center; cursor: zoom-out;
+}
+.lightbox[hidden] { display: none; }
+.lightbox img {
+  max-width: 96vw; max-height: 94vh;
+  border: 10px solid #ffffff; border-bottom-width: 34px; border-radius: 3px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, .7);
+  background: #ffffff;
+}
