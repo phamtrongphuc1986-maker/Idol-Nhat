@@ -1779,7 +1779,9 @@ const HO_SO = [
     chieuCao: 164, // cm
     canNang: "", // chưa có nguồn công khai đáng tin
     soDo: "105–56–86",
-    mangXaHoi: [],
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/himenoyuuri1" } // tài khoản dưới nghệ danh đầu Himeno Yuuri — gộp tên đợt 7, xem GHI-CHU-DU-LIEU.md
+    ],
     tieuSu: "Cựu diễn viên AV người Nhật. Chuỗi nghệ danh: Himeno Yuuri (姫野ゆうり) → Ichiki Miho → Okina Anna (奥菜アンナ) → Azumi Nakama (仲間あずみ). Hồ sơ Wikipedia nằm dưới tên Okina Anna.",
     nguon: [
       "https://www.weblio.jp/content/奥菜アンナ",
@@ -1847,6 +1849,186 @@ const HO_SO = [
     tieuSu: "Diễn viên AV người Nhật, cựu vũ công; từng qua T-POWERS, Krone, ARROWS (từng đổi tên Natsuyo Eru) và NAX, từ 08/2024 hoạt động tự do.",
     nguon: [
       "https://ja.wikipedia.org/wiki/夏希まろん"
+    ]
+  },
+
+  // ================= ĐỢT 7 =================
+  {
+    slug: "tachikawa-rie",
+    tenDayDu: "Tachikawa Rie (立川理恵)",
+    tenThuongGoi: "Rie Tachikawa",
+    ngaySinh: "1993-03-07", // theo Wikipedia JA + FANZA Guide — trang phụ ghi 07/04/1993, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 160, // cm — trang phụ ghi 155, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–57–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/立川理恵",
+      "https://fanza-guide.jp/actress/tatikawa_rie"
+    ]
+  },
+  {
+    slug: "kanae-ruka",
+    tenDayDu: "Kanae Ruka (佳苗るか)",
+    tenThuongGoi: "Ruka Kanae",
+    ngaySinh: "1993-03-04",
+    queQuan: "Nagano",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-Powers",
+    chieuCao: 150, // cm theo Wikipedia JA — Wikidata ghi 147, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–59–85",
+    mangXaHoi: [],
+    tieuSu: "Cựu diễn viên AV người Nhật, nay là tarento, biên kịch và doanh nhân. Có kênh YouTube \"佳苗るかのるーちゃんねる\".",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/佳苗るか",
+      "https://www.wikidata.org/wiki/Q11385442"
+    ]
+  },
+  {
+    slug: "shimizu-risa",
+    tenDayDu: "Shimizu Risa (清水理紗)",
+    tenThuongGoi: "Risa Shimizu",
+    ngaySinh: "1993-08-08", // thân bài Wikipedia JA + đa số CSDL — infobox Wikipedia tự ghi 1994, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Gifu",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "KRONE",
+    chieuCao: 166, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–58–86",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. KHÁC người với diễn viên lồng tiếng Shimizu Risa (清水利沙).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/清水理紗",
+      "https://av-joyu-db.com/actresses/shimizu-risa/"
+    ]
+  },
+  {
+    slug: "kitajima-rei",
+    tenDayDu: "Kitajima Rei (北島玲)",
+    tenThuongGoi: "Rei Kitajima",
+    ngaySinh: "1982-12-18", // theo Wikipedia JA — Wikidata ghi 1978, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Meito",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "96–60–89",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/北島玲",
+      "https://kutikomiya.jp/av-idol/kitajima-rei/"
+    ]
+  },
+  {
+    slug: "okita-anri",
+    tenDayDu: "Okita Anri (沖田杏梨)",
+    tenThuongGoi: "Anri Okita",
+    ngaySinh: "1986-10-28",
+    queQuan: "Birmingham, Anh", // nơi sinh — quốc tịch Nhật
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 168, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "101–59–92", // bộ thời AV — số đo thay đổi mạnh theo thời kỳ, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/AnriOkita_real" },
+      { ten: "Instagram", url: "https://www.instagram.com/anri_okita" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật, sinh tại Birmingham, Anh và mang quốc tịch Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/沖田杏梨",
+      "https://fanza-guide.jp/actress/okita_anri"
+    ]
+  },
+  {
+    slug: "hojo-maki",
+    tenDayDu: "Hojo Maki (北条麻妃)",
+    tenThuongGoi: "Maki Houjo",
+    ngaySinh: "1976-12-21", // trang phụ ghi 1978/1973 — không dùng, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Madonna",
+    chieuCao: 168, // cm
+    canNang: 50, // kg
+    soDo: "86–59–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Debut năm 2006 với tên Shiraishi Sayuri (白石さゆり), đổi tên thành Hojo Maki năm 2009. Quê gốc Ishikawa; thông tin công khai đổi thành Tokyo từ năm 2010.",
+    nguon: [
+      "https://www.weblio.jp/content/北条麻妃",
+      "https://zh.wikipedia.org/zh-tw/北条麻妃"
+    ]
+  },
+  {
+    slug: "hamasaki-mao",
+    tenDayDu: "Hamasaki Mao (浜崎真緒)",
+    tenThuongGoi: "Mao Hamasaki",
+    ngaySinh: "1993-10-20",
+    queQuan: "Chiba",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Funstar Promotion",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "85–59–84", // nhiều CSDL ghi 87–59–86, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/Hamasaki_mao" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật, giải nghệ AV năm 2024, nay hoạt động là DJ với tên \"DJ Mao\".",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://www.themoviedb.org/person/1701406",
+      "https://av-joyu-db.com/actresses/hamasa-kimao/"
+    ]
+  },
+  {
+    slug: "okazaki-emiri",
+    tenDayDu: "Okazaki Emiri (丘咲エミリ)",
+    tenThuongGoi: "Emiri Okazaki",
+    ngaySinh: "1991-04-10", // ngày sinh trong hồ sơ AV — ngày sinh thật cô tự công khai là 11/01/1989, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Kanagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "87–56–87",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Ngày sinh trong hồ sơ AV là 10/04/1991; ngày sinh thật cô tự công khai sau này là 11/01/1989.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://www.wikidata.org/wiki/Q11362569",
+      "https://en.namu.wiki/w/오카자키_에미리"
+    ]
+  },
+  {
+    slug: "takigawa-sofia",
+    tenDayDu: "Takigawa Sofia (滝川ソフィア)",
+    tenThuongGoi: "Sofia Takigawa",
+    ngaySinh: "1988-10-10",
+    queQuan: "Bồ Đào Nha", // nơi sinh
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Grand Production",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "104–58–87",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV sinh tại Bồ Đào Nha, cha người Bồ Đào Nha, mẹ người Nhật, hoạt động tại Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/滝川ソフィア",
+      "https://www.idolnest.com/ja/actress/sofia-takigawa/"
     ]
   }
 
