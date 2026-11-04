@@ -113,6 +113,8 @@ const HO_SO = [
   },
   {
     slug: "suzuki-satomi",
+    maSo: 98, // mã số trong danh mục nguồn — đối chiếu ở đợt 9, hồ sơ này đã có từ đợt 1
+    soVideo: 215, // số video trong danh mục nguồn
     tenDayDu: "Suzuki Satomi (鈴木さとみ)",
     tenThuongGoi: "Satomi Suzuki",
     ngaySinh: "1988-09-09",
@@ -696,6 +698,7 @@ const HO_SO = [
   {
     slug: "narimiya-harua",
     maSo: 206,
+    soVideo: 80, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Narimiya Harua (成宮はるあ)",
     tenThuongGoi: "Harua Narimiya",
     ngaySinh: "1991-07-30", // theo Wikipedia JA; Wikidata/FANZA Guide ghi biến thể 1992-07-30 — xem GHI-CHU-DU-LIEU.md
@@ -717,6 +720,7 @@ const HO_SO = [
   {
     slug: "minami-airi",
     maSo: 208,
+    soVideo: 141, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Minami Airi (みなみ愛梨)",
     tenThuongGoi: "Airi Minami",
     ngaySinh: "1991-07-20",
@@ -738,6 +742,7 @@ const HO_SO = [
   {
     slug: "kisaki-aya",
     maSo: 211,
+    soVideo: 138, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Kisaki Aya (希咲あや)",
     tenThuongGoi: "Aya Kisaki",
     ngaySinh: "1989-11-26",
@@ -760,6 +765,7 @@ const HO_SO = [
   {
     slug: "anjo-anna",
     maSo: 213,
+    soVideo: 146, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Anjo Anna (安城アンナ)",
     tenThuongGoi: "Anna Anjo",
     ngaySinh: "1991-11-01",
@@ -779,6 +785,7 @@ const HO_SO = [
   {
     slug: "nakajima-kyoko",
     maSo: 214,
+    soVideo: 51, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Nakajima Kyoko (中島京子)",
     tenThuongGoi: "Kyoko Nakajima",
     ngaySinh: "1983-03-12",
@@ -800,6 +807,7 @@ const HO_SO = [
   {
     slug: "sakazaki-miho",
     maSo: 215,
+    soVideo: 92, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Sakazaki Miho (坂咲みほ)",
     tenThuongGoi: "Mihono",
     ngaySinh: "1994-07-20",
@@ -822,6 +830,7 @@ const HO_SO = [
   {
     slug: "oda-mako",
     maSo: 216,
+    soVideo: 6, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Oda Mako (織田真子)",
     tenThuongGoi: "Mako Oda",
     ngaySinh: "1983-12-17",
@@ -844,6 +853,7 @@ const HO_SO = [
   {
     slug: "ninomiya-nana",
     maSo: 217,
+    soVideo: 92, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Ninomiya Nana (二宮ナナ)",
     tenThuongGoi: "Nana Ninomiya",
     ngaySinh: "1992-05-10",
@@ -863,6 +873,7 @@ const HO_SO = [
   {
     slug: "tomoda-ayaka",
     maSo: 218,
+    soVideo: 58, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Tomoda Ayaka (友田彩也香)",
     tenThuongGoi: "Ayaka Tomoda",
     ngaySinh: "1988-09-14",
@@ -2029,6 +2040,1441 @@ const HO_SO = [
     nguon: [
       "https://ja.wikipedia.org/wiki/滝川ソフィア",
       "https://www.idolnest.com/ja/actress/sofia-takigawa/"
+    ]
+  }
+,
+  // ================= ĐỢT 8 =================
+  {
+    slug: "ichijo-rion",
+    maSo: 50, // mã số trong danh mục nguồn
+    soVideo: 50, // số video trong danh mục nguồn
+    tenDayDu: "Ichijo Rion (一条リオン)",
+    tenThuongGoi: "Rion Ichijo",
+    ngaySinh: "1994-06-09",
+    queQuan: "Aomori",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Style One",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "95–60–89",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Tên debut: Kotone Ria (琴音りあ).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/一条リオン"
+    ]
+  },
+  {
+    slug: "asagiri-akari",
+    maSo: 52, // mã số trong danh mục nguồn
+    soVideo: 169, // số video trong danh mục nguồn
+    tenDayDu: "Asagiri Akari (朝桐光)",
+    tenThuongGoi: "Minamino Akari",
+    ngaySinh: "1982-10-06", // nguồn fan Hàn nhất quán — ngày sinh phụ 1982-11-02, xem GHI-CHU-DU-LIEU.md
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Dicrea Promotion",
+    chieuCao: 164, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–58–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Tên cũ: Minamino Akari.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: []
+  },
+  {
+    slug: "misaki-yui",
+    maSo: 53, // mã số trong danh mục nguồn
+    soVideo: 103, // số video trong danh mục nguồn
+    tenDayDu: "Misaki Yui (美咲結衣)",
+    tenThuongGoi: "Yui Misaki",
+    ngaySinh: "1989-11-24",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Office BLITZ",
+    chieuCao: 156, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "89–58–86", // av-db ghi vòng 1 là 96, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/美咲結衣"
+    ]
+  },
+  {
+    slug: "nishikawa-yui",
+    maSo: 54, // mã số trong danh mục nguồn
+    soVideo: 176, // số video trong danh mục nguồn
+    tenDayDu: "Nishikawa Yui (西川ゆい)",
+    tenThuongGoi: "Yui Nishikawa",
+    ngaySinh: "1994-10-10", // nguồn TQ ghi 1994-03-15/Yamagata, vài CSDL ghi 1991-10-10 — xem GHI-CHU-DU-LIEU.md
+    queQuan: "Fukui",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Declare Promotion",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–60–86",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://zh.wikipedia.org/wiki/西川ゆい"
+    ]
+  },
+  {
+    slug: "azumi-ren",
+    maSo: 56, // mã số trong danh mục nguồn
+    soVideo: 53, // số video trong danh mục nguồn
+    tenDayDu: "Azumi Ren (あずみ恋)",
+    tenThuongGoi: "Ren Azumi",
+    ngaySinh: "1991-01-07",
+    queQuan: "Chiba",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "B-Dash Promotion",
+    chieuCao: 156, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "85–56–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Tên debut: Hasumi Ren.",
+    nguon: [
+      "https://www.themoviedb.org/person/2307923"
+    ]
+  },
+  {
+    slug: "yoshikawa-aimi",
+    maSo: 57, // mã số trong danh mục nguồn
+    soVideo: 39, // số video trong danh mục nguồn
+    tenDayDu: "Yoshikawa Aimi (吉川あいみ)",
+    tenThuongGoi: "Aimi Yoshikawa",
+    ngaySinh: "1994-03-20",
+    queQuan: "Kanagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "ARROWS",
+    chieuCao: 152, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "95–58–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/吉川あいみ"
+    ]
+  },
+  {
+    slug: "aoi-chie",
+    maSo: 58, // mã số trong danh mục nguồn
+    soVideo: 36, // số video trong danh mục nguồn
+    tenDayDu: "Aoi Chie (葵千恵)",
+    tenThuongGoi: "Chie Aoi",
+    ngaySinh: "1989-06-10",
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "BELLTECH PRODUCTION",
+    chieuCao: 156, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–60–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://en.namu.wiki/w/아오이_치에"
+    ]
+  },
+  {
+    slug: "morisawa-kana",
+    maSo: 59, // mã số trong danh mục nguồn
+    soVideo: 23, // số video trong danh mục nguồn
+    maSoThem: [146], // mục #146 đợt 9 "Kanako Iioka" là tên debut 飯岡かなこ của chính cô
+    tenDayDu: "Morisawa Kana (森沢かな)",
+    tenThuongGoi: "Kana Morisawa",
+    ngaySinh: "1992-05-09",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–63–93", // bộ số cũ 86–59–88, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/morisawa_kana" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. Tên debut: Ioka Kanako (飯岡かなこ).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/森沢かな"
+    ]
+  },
+  {
+    slug: "mizuna-rei",
+    maSo: 61, // mã số trong danh mục nguồn
+    soVideo: 123, // số video trong danh mục nguồn
+    tenDayDu: "Mizuna Rei (みづなれい)",
+    tenThuongGoi: "Rei Mizuna",
+    ngaySinh: "1984-05-20",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "ALLURE",
+    chieuCao: 153, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "82–57–86",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Nay hoạt động với tên Suzunami Natsu.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/みづなれい"
+    ]
+  },
+  {
+    slug: "tsukamoto-yuki",
+    maSo: 62, // mã số trong danh mục nguồn
+    soVideo: 50, // số video trong danh mục nguồn
+    tenDayDu: "Tsukamoto Yuki (つかもと友希)",
+    tenThuongGoi: "Makimoto Chiyuki",
+    ngaySinh: "1970-12-16", // CSDL FANZA ghi 1973-08-26, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Hiroshima",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 154, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–58–84",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, còn được biết đến với tên Makimoto Chiyuki (牧本千幸).",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://ja.wikipedia.org/wiki/牧本千幸"
+    ]
+  },
+  {
+    slug: "kasugano-yui",
+    maSo: 64, // mã số trong danh mục nguồn
+    soVideo: 113, // số video trong danh mục nguồn
+    tenDayDu: "Kasugano Yui (春日野結衣)",
+    tenThuongGoi: "Yui Kasugano",
+    ngaySinh: "1993-10-11", // agency GREEN ghi 1990-01-18, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "GREEN",
+    chieuCao: 149, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–58–87", // agency GREEN ghi 82–60–88, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/kasuganoyui" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. KHÁC người với Kasuga Yui (春日由衣, mã #115 đợt 8).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/春日野結衣"
+    ]
+  },
+  {
+    slug: "shirosaki-aoi",
+    maSo: 65, // mã số trong danh mục nguồn
+    soVideo: 21, // số video trong danh mục nguồn
+    tenDayDu: "Shirosaki Aoi (白咲碧)",
+    tenThuongGoi: "Suzumiya Kotone",
+    ngaySinh: "1992-06-27",
+    queQuan: "Tokyo", // NamuWiki ghi xuất thân Shiga, xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LANTANA",
+    chieuCao: "", // chưa có nguồn công khai đáng tin
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "", // chưa có nguồn công khai đáng tin
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Chuỗi nghệ danh: Kashii Minami → Shirosaki Aoi → Suzumiya Kotone.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://en.namu.wiki/w/스즈미야_코토네"
+    ]
+  },
+  {
+    slug: "sakai-momoka",
+    maSo: 66, // mã số trong danh mục nguồn
+    soVideo: 38, // số video trong danh mục nguồn
+    tenDayDu: "Sakai Momoka (さかいももか)",
+    tenThuongGoi: "Momoka Sakai",
+    ngaySinh: "1993-07-25",
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: "", // chưa có nguồn công khai đáng tin
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "", // chưa có nguồn công khai đáng tin
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://www.wikidata.org/wiki/Q22128814"
+    ]
+  },
+  {
+    slug: "maeda-kaori",
+    maSo: 67, // mã số trong danh mục nguồn
+    soVideo: 106, // số video trong danh mục nguồn
+    tenDayDu: "Maeda Kaori (前田かおり)",
+    tenThuongGoi: "Kaori Maeda",
+    ngaySinh: "1990-09-08",
+    queQuan: "Kagoshima",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 160, // cm
+    canNang: 42, // kg
+    soDo: "84–56–80",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/前田かおり"
+    ]
+  },
+  {
+    slug: "haruna-hana",
+    maSo: 68, // mã số trong danh mục nguồn
+    soVideo: 34, // số video trong danh mục nguồn
+    tenDayDu: "Haruna Hana (春菜はな)",
+    tenThuongGoi: "Hana Haruna",
+    ngaySinh: "1988-11-08",
+    queQuan: "Tokyo", // vài nguồn ghi Aichi, xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "TeStar",
+    chieuCao: 162, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "108–58–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/春菜はな"
+    ]
+  },
+  {
+    slug: "matsumoto-mei",
+    maSo: 71, // mã số trong danh mục nguồn
+    soVideo: 71, // số video trong danh mục nguồn
+    tenDayDu: "Matsumoto Mei (松本メイ)",
+    tenThuongGoi: "Mei Matsumoto",
+    ngaySinh: "1993-11-03",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 153, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–59–86",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/matsumoto_mei" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/松本メイ"
+    ]
+  },
+  {
+    slug: "momotani-erika",
+    maSo: 73, // mã số trong danh mục nguồn
+    soVideo: 1, // số video trong danh mục nguồn
+    tenDayDu: "Momotani Erika (桃谷エリカ)",
+    tenThuongGoi: "Erika Momotani",
+    ngaySinh: "1994-06-15",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Lotus Group",
+    chieuCao: 165, // cm
+    canNang: 40, // kg
+    soDo: "84–56–82",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/桃谷エリカ"
+    ]
+  },
+  {
+    slug: "ninomiya-waka",
+    maSo: 74, // mã số trong danh mục nguồn
+    soVideo: 52, // số video trong danh mục nguồn
+    tenDayDu: "Ninomiya Waka (二宮和香)",
+    tenThuongGoi: "Waka Ninomiya",
+    ngaySinh: "1991-04-19",
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Fanstar Promotion",
+    chieuCao: 154, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–58–85",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/ninomiyawaka" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. KHÁC người với Ninomiya Nana (đợt 3).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/二宮和香"
+    ]
+  },
+  {
+    slug: "koda-rina",
+    maSo: 75, // mã số trong danh mục nguồn
+    soVideo: 85, // số video trong danh mục nguồn
+    tenDayDu: "Koda Rina (倖田りな)",
+    tenThuongGoi: "Shinjo Yui",
+    ngaySinh: "1986-11-30",
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–58–89",
+    mangXaHoi: [],
+    tieuSu: "Koda Rina (倖田りな) là nghệ danh của diễn viên AV Shinjo Yui (新城由衣).",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: []
+  },
+  {
+    slug: "murakami-risa",
+    maSo: 76, // mã số trong danh mục nguồn
+    soVideo: 23, // số video trong danh mục nguồn
+    tenDayDu: "Murakami Risa (村上里沙)",
+    tenThuongGoi: "Risa Murakami",
+    ngaySinh: "1983-05-24",
+    queQuan: "Chiba",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 167, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–60–87",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Sau này đổi tên thành Takeuchi Sarina.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/村上里沙"
+    ]
+  },
+  {
+    slug: "uehara-ai",
+    maSo: 78, // mã số trong danh mục nguồn
+    soVideo: 40, // số video trong danh mục nguồn
+    tenDayDu: "Uehara Ai (上原亜衣)",
+    tenThuongGoi: "Ai Uehara",
+    ngaySinh: "1992-11-12",
+    queQuan: "Fukuoka",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Mine's",
+    chieuCao: 155, // cm
+    canNang: 44, // kg
+    soDo: "83–58–86",
+    mangXaHoi: [
+      { ten: "Instagram", url: "https://www.instagram.com/ai_uehara_ex" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/上原亜衣"
+    ]
+  },
+  {
+    slug: "sakurai-ria",
+    maSo: 79, // mã số trong danh mục nguồn
+    soVideo: 65, // số video trong danh mục nguồn
+    tenDayDu: "Sakurai Ria (桜井りあ)",
+    tenThuongGoi: "Ria Sakurai",
+    ngaySinh: "1989-07-19",
+    queQuan: "Akita",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Declare",
+    chieuCao: 152, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–56–82",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/桜井りあ"
+    ]
+  },
+  {
+    slug: "shinoda-ayumi",
+    maSo: 80, // mã số trong danh mục nguồn
+    soVideo: 102, // số video trong danh mục nguồn
+    tenDayDu: "Shinoda Ayumi (篠田あゆみ)",
+    tenThuongGoi: "Ayumi Shinoda",
+    ngaySinh: "1985-11-16", // infobox Wikipedia ghi 1980-11-16 — dùng 1985 theo hồ sơ FANZA, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Kanagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "All Promotion",
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "95–58–84",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/篠田あゆみ"
+    ]
+  },
+  {
+    slug: "niiyama-kaede",
+    maSo: 85, // mã số trong danh mục nguồn
+    soVideo: 127, // số video trong danh mục nguồn
+    tenDayDu: "Niiyama Kaede (新山かえで)",
+    tenThuongGoi: "Kaede Niiyama",
+    ngaySinh: "1986-08-03",
+    queQuan: "Fukushima",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Style One",
+    chieuCao: 168, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "93–58–88",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/niiyamakaede" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/新山かえで"
+    ]
+  },
+  {
+    slug: "mizuki-yume",
+    maSo: 86, // mã số trong danh mục nguồn
+    soVideo: 125, // số video trong danh mục nguồn
+    tenDayDu: "Mizuki Yume (美月優芽)",
+    tenThuongGoi: "Yume Mitsuki",
+    ngaySinh: "1991-08-09",
+    queQuan: "Hyogo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Declare Promotion",
+    chieuCao: 152, // cm
+    canNang: 46, // kg
+    soDo: "94–60–91",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://www.wikidata.org/wiki/Q11194461"
+    ]
+  },
+  {
+    slug: "maeda-hina",
+    maSo: 92, // mã số trong danh mục nguồn
+    soVideo: 110, // số video trong danh mục nguồn
+    tenDayDu: "Maeda Hina (前田陽菜)",
+    tenThuongGoi: "Hina Maeda",
+    ngaySinh: "1989-08-15",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Selection",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–58–90",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/前田陽菜"
+    ]
+  },
+  {
+    slug: "mano-yuria",
+    maSo: 93, // mã số trong danh mục nguồn
+    soVideo: 141, // số video trong danh mục nguồn
+    tenDayDu: "Mano Yuria (真野ゆりあ)",
+    tenThuongGoi: "Yuria Mano",
+    ngaySinh: "1993-05-25",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 151, // cm — hồ sơ hậu giải nghệ ghi 153 cm, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–57–84", // hồ sơ hậu giải nghệ ghi 71–58–79, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/yuria_pf" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/真野ゆりあ"
+    ]
+  },
+  {
+    slug: "himekawa-yuuna",
+    maSo: 99, // mã số trong danh mục nguồn
+    soVideo: 56, // số video trong danh mục nguồn
+    tenDayDu: "Himekawa Yuuna (姫川ゆうな)",
+    tenThuongGoi: "Yuuna Himekawa",
+    ngaySinh: "1996-08-03",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Attractive",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "85–58–84",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/姫川ゆうな"
+    ]
+  },
+  {
+    slug: "akimoto-mayuka",
+    maSo: 100, // mã số trong danh mục nguồn
+    soVideo: 107, // số video trong danh mục nguồn
+    tenDayDu: "Akimoto Mayuka (秋元まゆ花)",
+    tenThuongGoi: "Mayuka Akimoto",
+    ngaySinh: "1989-07-05",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Meito",
+    chieuCao: 155, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–59–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/秋元まゆ花"
+    ]
+  },
+  {
+    slug: "iwasa-ayumi",
+    maSo: 102, // mã số trong danh mục nguồn
+    soVideo: 63, // số video trong danh mục nguồn
+    tenDayDu: "Iwasa Ayumi (岩佐あゆみ)",
+    tenThuongGoi: "Ayumi Iwasa",
+    ngaySinh: "1990-07-14",
+    queQuan: "Iwate",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Sunrise Agency",
+    chieuCao: 155, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–58–86",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/岩佐あゆみ"
+    ]
+  },
+  {
+    slug: "ichinose-ameri",
+    maSo: 103, // mã số trong danh mục nguồn
+    soVideo: 4, // số video trong danh mục nguồn
+    tenDayDu: "Ichinose Ameri (一ノ瀬アメリ)",
+    tenThuongGoi: "Ameri Ichinose",
+    ngaySinh: "1987-09-16",
+    queQuan: "Kanagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 167, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–56–83",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. KHÁC hẳn Ameri Koshikawa (đã loại ở đợt 4).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/一ノ瀬アメリ"
+    ]
+  },
+  {
+    slug: "tachibana-misuzu",
+    maSo: 105, // mã số trong danh mục nguồn
+    soVideo: 43, // số video trong danh mục nguồn
+    tenDayDu: "Tachibana Misuzu (橘美鈴)",
+    tenThuongGoi: "Misuzu Tachibana",
+    ngaySinh: "1984-01-01", // CHỈ năm sinh 1984 được công khai — mốc ngày 01-01 là quy ước điền, xem GHI-CHU-DU-LIEU.md
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Cruse",
+    chieuCao: 163, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "82–60–90",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Chỉ năm sinh 1984 được công khai; mốc ngày 01/01 trong hồ sơ là quy ước điền, không phải ngày sinh thật được xác nhận.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: []
+  },
+  {
+    slug: "ono-machiko",
+    maSo: 106, // mã số trong danh mục nguồn
+    soVideo: 18, // số video trong danh mục nguồn
+    tenDayDu: "Ono Machiko (尾野真知子)",
+    tenThuongGoi: "Machiko Ono",
+    ngaySinh: "1993-02-15",
+    queQuan: "Saitama",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LIFE PROMOTION",
+    chieuCao: 154, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "", // chỉ rõ vòng 1 là 85 (cúp D), chưa có bộ số đo đầy đủ — xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/尾野真知子"
+    ]
+  },
+  {
+    slug: "mizuki-nao",
+    maSo: 107, // mã số trong danh mục nguồn
+    soVideo: 90, // số video trong danh mục nguồn
+    tenDayDu: "Mizuki Nao (水城奈緒)",
+    tenThuongGoi: "Nao Mizuki",
+    ngaySinh: "1984-09-18",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 159, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "90–59–87",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/水城奈緒"
+    ]
+  },
+  {
+    slug: "tanaka-hitomi",
+    maSo: 108, // mã số trong danh mục nguồn
+    soVideo: 3, // số video trong danh mục nguồn
+    tenDayDu: "Tanaka Hitomi (田中瞳)",
+    tenThuongGoi: "Hitomi",
+    ngaySinh: "1986-07-18",
+    queQuan: "Kumamoto",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Harvestars",
+    chieuCao: 156, // cm — vài CSDL ghi 162, xem GHI-CHU-DU-LIEU.md
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "113–59–83",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, thường được gọi là Hitomi.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/田中瞳"
+    ]
+  },
+  {
+    slug: "ariga-yua",
+    maSo: 109, // mã số trong danh mục nguồn
+    soVideo: 190, // số video trong danh mục nguồn
+    tenDayDu: "Ariga Yua (有賀ゆあ)",
+    tenThuongGoi: "Yua Ariga",
+    ngaySinh: "1993-12-06",
+    queQuan: "Shizuoka",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Unity Promotion",
+    chieuCao: 156, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–57–83",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/有賀ゆあ"
+    ]
+  },
+  {
+    slug: "ozawa-maria",
+    maSo: 110, // mã số trong danh mục nguồn
+    soVideo: 79, // số video trong danh mục nguồn
+    tenDayDu: "Ozawa Maria (小澤マリア)",
+    tenThuongGoi: "Maria Ozawa",
+    ngaySinh: "1986-01-08",
+    queQuan: "Hokkaido",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 162, // cm
+    canNang: 48, // kg
+    soDo: "88–58–86",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/小澤マリア"
+    ]
+  },
+  {
+    slug: "haruka-megumi",
+    maSo: 111, // mã số trong danh mục nguồn
+    soVideo: 113, // số video trong danh mục nguồn
+    tenDayDu: "Haruka Megumi (遥めぐみ)",
+    tenThuongGoi: "Megumi Haruka",
+    ngaySinh: "1986-10-05",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Bambi Promotion",
+    chieuCao: 162, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "91–60–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://en.wikipedia.org/wiki/Megumi_Haruka"
+    ]
+  },
+  {
+    slug: "kasuga-yui",
+    maSo: 115, // mã số trong danh mục nguồn
+    soVideo: 90, // số video trong danh mục nguồn
+    tenDayDu: "Kasuga Yui (春日由衣)",
+    tenThuongGoi: "Yui Kasuga",
+    ngaySinh: "1992-06-09",
+    queQuan: "Saitama",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 167, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–60–87",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. KHÁC người với Kasugano Yui (春日野結衣, mã #64 đợt 8).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/春日由衣"
+    ]
+  },
+  {
+    slug: "sakurai-tomoka",
+    maSo: 117, // mã số trong danh mục nguồn
+    soVideo: 78, // số video trong danh mục nguồn
+    tenDayDu: "Sakurai Tomoka (櫻井ともか)",
+    tenThuongGoi: "Tomoka Sakurai",
+    ngaySinh: "1989-09-11",
+    queQuan: "Tochigi",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–60–93",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/櫻井ともか"
+    ]
+  }
+,
+  // ================= ĐỢT 9 =================
+  {
+    slug: "mikami-yua",
+    maSo: 118, // mã số trong danh mục nguồn
+    soVideo: 1, // số video trong danh mục nguồn
+    tenDayDu: "Mikami Yua (三上悠亜)",
+    tenThuongGoi: "Yua Mikami",
+    ngaySinh: "1993-08-16",
+    queQuan: "Aichi",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "One's Double",
+    chieuCao: 159, // cm
+    canNang: "", // nguồn lệch nhau (40/49) — để trống, xem GHI-CHU-DU-LIEU.md
+    soDo: "84–58–88", // infobox Wikipedia ghi 88–57–83, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, cựu thành viên SKE48. Giải nghệ AV ngày 16/08/2023.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/三上悠亜",
+      "https://av-db.net/actress/mikamiyua"
+    ]
+  },
+  {
+    slug: "misono-waka",
+    maSo: 119, // mã số trong danh mục nguồn
+    soVideo: 113, // số video trong danh mục nguồn
+    tenDayDu: "Misono Waka (美園和花)",
+    tenThuongGoi: "Waka Misono",
+    ngaySinh: "1999-03-03",
+    queQuan: "Kagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "B-dash Promotion",
+    chieuCao: 155, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "100–60–91",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Tên khác: Yada Yui.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/美園和花",
+      "https://av-joyu-db.com/actresses/misono-waka/"
+    ]
+  },
+  {
+    slug: "kawamura-maya",
+    maSo: 121, // mã số trong danh mục nguồn
+    soVideo: 98, // số video trong danh mục nguồn
+    tenDayDu: "Kawamura Maya (川村まや)",
+    tenThuongGoi: "Maya Kawamura",
+    ngaySinh: "1995-02-22",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Sun Production",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "85–58–86",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://av-db.net/actress/kawamuramaya",
+      "https://www.weblio.jp/content/川村まや"
+    ]
+  },
+  {
+    slug: "yayoi-mizuki",
+    maSo: 122, // mã số trong danh mục nguồn
+    soVideo: 143, // số video trong danh mục nguồn
+    tenDayDu: "Yayoi Mizuki (弥生みづき)",
+    tenThuongGoi: "Mizuki Yayoi",
+    ngaySinh: "1998-12-07", // snippet infobox có nơi ghi 1996 — dùng 1998, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Fukuoka",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LIGHT",
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "89–60–94",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/弥生みづき",
+      "https://av-db.net/actress/yayoimizuki"
+    ]
+  },
+  {
+    slug: "tsukada-shiori",
+    maSo: 123, // mã số trong danh mục nguồn
+    soVideo: 11, // số video trong danh mục nguồn
+    tenDayDu: "Tsukada Shiori (塚田詩織)",
+    tenThuongGoi: "Shiori Tsukada",
+    ngaySinh: "1994-03-23",
+    queQuan: "Hokkaido",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Díaz Group",
+    chieuCao: 155, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "101–60–95",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/ShioriTsukada" },
+      { ten: "Instagram", url: "https://www.instagram.com/tsukashio323" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. Tên hiện tại viết là 塚田しおり.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/塚田詩織",
+      "https://av-joyu-db.com/actresses/tsukada-shiori/"
+    ]
+  },
+  {
+    slug: "natsuhara-yui",
+    maSo: 124, // mã số trong danh mục nguồn
+    soVideo: 118, // số video trong danh mục nguồn
+    tenDayDu: "Natsuhara Yui (夏原唯)",
+    tenThuongGoi: "Yui Natsuhara",
+    ngaySinh: "1999-05-02", // Wikidata ghi năm sinh 1995, xem GHI-CHU-DU-LIEU.md
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LINX",
+    chieuCao: 155, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "85–56–85",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/natsuharayui" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/夏原唯"
+    ]
+  },
+  {
+    slug: "honma-yuri",
+    maSo: 125, // mã số trong danh mục nguồn
+    soVideo: 38, // số video trong danh mục nguồn
+    tenDayDu: "Honma Yuri (本真ゆり)",
+    tenThuongGoi: "Yuri Honma",
+    ngaySinh: "1993-01-28",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Benesu Promotion",
+    chieuCao: 162, // cm
+    canNang: 55, // kg
+    soDo: "98–64–92",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/honma_yuri" },
+      { ten: "Instagram", url: "https://www.instagram.com/yuri_honma_official" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/本真ゆり",
+      "https://av-joyu-db.com/actresses/honma-yuri/"
+    ]
+  },
+  {
+    slug: "nishina-momoka",
+    maSo: 126, // mã số trong danh mục nguồn
+    soVideo: 4, // số video trong danh mục nguồn
+    tenDayDu: "Nishina Momoka (仁科百華)",
+    tenThuongGoi: "Momoka Nishina",
+    ngaySinh: "1991-05-24", // infobox Wikipedia ghi 1990-10-03, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 166, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "100–58–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Nay hoạt động là talent với tên Yūki Eve.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/仁科百華",
+      "https://av-joyu-db.com/actresses/nishina-momoka/"
+    ]
+  },
+  {
+    slug: "hayama-hitomi",
+    maSo: 127, // mã số trong danh mục nguồn
+    soVideo: 20, // số video trong danh mục nguồn
+    tenDayDu: "Hayama Hitomi (葉山瞳)",
+    tenThuongGoi: "Nakagawa Mirei",
+    ngaySinh: "1993-05-20", // 1 nguồn ghi 23/05, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 155, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–57–84",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Tên debut: Nakagawa Mirei.",
+    nguon: [
+      "https://fanza-guide.jp/actress/hayama_hitomi"
+    ]
+  },
+  {
+    slug: "nagasawa-maomi",
+    maSo: 128, // mã số trong danh mục nguồn
+    soVideo: 54, // số video trong danh mục nguồn
+    tenDayDu: "Nagasawa Maomi (永沢まおみ)",
+    tenThuongGoi: "Mizusawa Mao",
+    ngaySinh: "1990-06-25", // hồ sơ debut từng ghi ngày sinh giả 1987-05-26, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo", // chỉ có nguồn yếu, xem GHI-CHU-DU-LIEU.md
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Empress",
+    chieuCao: 154, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–59–90",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật, còn được biết đến với tên Mizusawa Mao (水澤まお). KHÁC người với Nagasawa Azusa (mã #129 đợt 9).",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://ja.wikipedia.org/wiki/水澤まお"
+    ]
+  },
+  {
+    slug: "nagasawa-azusa",
+    maSo: 129, // mã số trong danh mục nguồn
+    soVideo: 71, // số video trong danh mục nguồn
+    tenDayDu: "Nagasawa Azusa (長澤あずさ)",
+    tenThuongGoi: "Azusa Nagasawa",
+    ngaySinh: "1988-12-30",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 162, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "100–63–92",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. KHÁC người với Nagasawa Maomi (mã #128 đợt 9).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/長澤あずさ",
+      "https://av-joyu-db.com/actresses/nagasawa-azusa/"
+    ]
+  },
+  {
+    slug: "hanyu-arisa",
+    maSo: 130, // mã số trong danh mục nguồn
+    soVideo: 134, // số video trong danh mục nguồn
+    tenDayDu: "Hanyu Arisa (羽生アリサ)",
+    tenThuongGoi: "Arisa Hanyu",
+    ngaySinh: "1986-10-12", // vài nguồn ghi 21/10, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Bambi Promotion",
+    chieuCao: 153, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "93–59–90",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Tên debut: Komine Hinata.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/羽生アリサ",
+      "https://av-db.net/actress/hanyuuarisa"
+    ]
+  },
+  {
+    slug: "ono-maria",
+    maSo: 131, // mã số trong danh mục nguồn
+    soVideo: 69, // số video trong danh mục nguồn
+    tenDayDu: "Ono Maria (小野麻里亜)",
+    tenThuongGoi: "Maria Ono",
+    ngaySinh: "1989-03-17",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Life Promotion",
+    chieuCao: 150, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–60–87",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://www.weblio.jp/content/小野麻里亜"
+    ]
+  },
+  {
+    slug: "horiguchi-maki",
+    maSo: 132, // mã số trong danh mục nguồn
+    soVideo: 33, // số video trong danh mục nguồn
+    tenDayDu: "Horiguchi Maki (堀口真希)",
+    tenThuongGoi: "Maki Horiguchi",
+    ngaySinh: "1995-11-30",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 148, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–56–82",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Tên khác: Toyama Mio, Honda Runa.",
+    nguon: [
+      "https://kutikomiya.jp/av-idol/horiguchi-maki/"
+    ]
+  },
+  {
+    slug: "ichikawa-minori",
+    maSo: 133, // mã số trong danh mục nguồn
+    soVideo: 21, // số video trong danh mục nguồn
+    tenDayDu: "Ichikawa Minori (市川みのり)",
+    tenThuongGoi: "Minori Ichikawa",
+    ngaySinh: "1993-03-09",
+    queQuan: "Chiba",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 150, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–58–82",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. KHÁC người với Ichikawa Masami.",
+    nguon: [
+      "https://kutikomiya.jp/av-idol/ichikawa-minori/"
+    ]
+  },
+  {
+    slug: "arai-rima",
+    maSo: 137, // mã số trong danh mục nguồn
+    soVideo: 84, // số video trong danh mục nguồn
+    tenDayDu: "Arai Rima (新井リマ)",
+    tenThuongGoi: "Rima Arai",
+    ngaySinh: "2000-10-03",
+    queQuan: "Hyogo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "LIGHT",
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–56–84",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/新井リマ",
+      "https://lightpro.jp/talent/arairima.html"
+    ]
+  },
+  {
+    slug: "maeda-yumi",
+    maSo: 139, // mã số trong danh mục nguồn
+    soVideo: 131, // số video trong danh mục nguồn
+    tenDayDu: "Maeda Yumi (前田由美)",
+    tenThuongGoi: "Yumi Maeda",
+    ngaySinh: "1994-10-01", // Baidu ghi 1994-12-03 (tuổi không đổi), xem GHI-CHU-DU-LIEU.md
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 157, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–60–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://kutikomiya.jp/av-idol/maeda-yumi/"
+    ]
+  },
+  {
+    slug: "sasaki-aki",
+    maSo: 141, // mã số trong danh mục nguồn
+    soVideo: 8, // số video trong danh mục nguồn
+    tenDayDu: "Sasaki Aki (佐々木あき)",
+    tenThuongGoi: "Aki Sasaki",
+    ngaySinh: "1983-03-17", // ngày sinh thật cô tự công khai 12/2025 — hồ sơ cũ ghi 1979-12-24 suốt nhiều năm, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Saitama",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Listar Pro",
+    chieuCao: 165, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "85–60–90",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/佐々木あき"
+    ]
+  },
+  {
+    slug: "miyashita-kana",
+    maSo: 142, // mã số trong danh mục nguồn
+    soVideo: 73, // số video trong danh mục nguồn
+    tenDayDu: "Miyashita Kana (宮下華奈)",
+    tenThuongGoi: "Kana Miyashita",
+    ngaySinh: "1990-11-10", // kutikomiya ghi 1990-10-01/Tokyo, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Chiba",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "T-POWERS",
+    chieuCao: 158, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "81–58–80",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/宮下華奈"
+    ]
+  },
+  {
+    slug: "kisaki-ema",
+    maSo: 144, // mã số trong danh mục nguồn
+    soVideo: 36, // số video trong danh mục nguồn
+    tenDayDu: "Kisaki Ema (希咲エマ)",
+    tenThuongGoi: "Ema Kisaki",
+    ngaySinh: "1989-08-30",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 152, // cm
+    canNang: 37, // kg
+    soDo: "95–56–85",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/emakisaki" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/希咲エマ",
+      "https://www.wikidata.org/wiki/Q11480898"
+    ]
+  },
+  {
+    slug: "hazuki-nozomi",
+    maSo: 145, // mã số trong danh mục nguồn
+    soVideo: 128, // số video trong danh mục nguồn
+    tenDayDu: "Hazuki Nozomi (羽月希)",
+    tenThuongGoi: "Haneda Nozomi",
+    ngaySinh: "1988-07-31",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "First Promotion",
+    chieuCao: 154, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "88–60–84",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/hazuki_nozomi" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật. Từ năm 2020 dùng tên Haneda Nozomi (羽田希).",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/羽田希",
+      "https://av-db.net/actress/hazukinozomi"
+    ]
+  },
+  {
+    slug: "oba-yui",
+    maSo: 152, // mã số trong danh mục nguồn
+    soVideo: 56, // số video trong danh mục nguồn
+    tenDayDu: "Oba Yui (大場ゆい)",
+    tenThuongGoi: "Yui Oba",
+    ngaySinh: "1987-06-07",
+    queQuan: "Shiga",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 170, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–60–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/大場ゆい"
+    ]
+  },
+  {
+    slug: "yoshimura-misaki",
+    maSo: 153, // mã số trong danh mục nguồn
+    soVideo: 80, // số video trong danh mục nguồn
+    tenDayDu: "Yoshimura Misaki (吉村美咲)",
+    tenThuongGoi: "Misaki Yoshimura",
+    ngaySinh: "1993-04-19",
+    queQuan: "Yamaguchi",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "83–57–82",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://kutikomiya.jp/av-idol/yoshimura-misaki/"
+    ]
+  },
+  {
+    slug: "miyazawa-chiharu",
+    maSo: 155, // mã số trong danh mục nguồn
+    soVideo: 117, // số video trong danh mục nguồn
+    tenDayDu: "Miyazawa Chiharu (宮沢ちはる)",
+    tenThuongGoi: "Chiharu Miyazawa",
+    ngaySinh: "1996-05-12", // vài trang ghi 1996-11-30, xem GHI-CHU-DU-LIEU.md
+    queQuan: "Saitama",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 150, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "80–58–76",
+    mangXaHoi: [
+      { ten: "X", url: "https://x.com/miya_chiharuu" },
+      { ten: "Instagram", url: "https://www.instagram.com/chi.ha.ru.nrun" }
+    ],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/宮沢ちはる"
+    ]
+  },
+  {
+    slug: "miyazaki-airi",
+    maSo: 156, // mã số trong danh mục nguồn
+    soVideo: 95, // số video trong danh mục nguồn
+    tenDayDu: "Miyazaki Airi (宮崎愛莉)",
+    tenThuongGoi: "Airi Miyazaki",
+    ngaySinh: "1991-06-17",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 169, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "89–58–90",
+    mangXaHoi: [],
+    tieuSu: "Miyazaki Airi là nghệ danh debut của Mimori Kei (美森けい). Hồ sơ thời Mimori Kei ghi ngày sinh khác (1984/1985-11-30) — mâu thuẫn chưa giải quyết, xem GHI-CHU-DU-LIEU.md.",
+    doTinCay: "trung-binh", // cờ nội bộ — xem GHI-CHU-DU-LIEU.md
+    nguon: [
+      "https://ja.wikipedia.org/wiki/美森けい",
+      "https://baike.baidu.com/item/宮崎愛莉/16739919"
+    ]
+  },
+  {
+    slug: "jinguji-nao",
+    maSo: 157, // mã số trong danh mục nguồn
+    soVideo: 6, // số video trong danh mục nguồn
+    tenDayDu: "Jinguji Nao (神宮寺ナオ)",
+    tenThuongGoi: "Nao Jinguji",
+    ngaySinh: "1997-02-15",
+    queQuan: "Kanagawa",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "ARM Promotion",
+    chieuCao: 160, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "86–61–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://ja.wikipedia.org/wiki/神宮寺ナオ"
+    ]
+  },
+  {
+    slug: "nakano-arisa",
+    maSo: 158, // mã số trong danh mục nguồn
+    soVideo: 21, // số video trong danh mục nguồn
+    tenDayDu: "Nakano Arisa (中野ありさ)",
+    tenThuongGoi: "Arisa Nakano",
+    ngaySinh: "1991-12-24",
+    queQuan: "Tokyo",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "CLAP",
+    chieuCao: 149, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "84–59–88",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://av-joyu-db.com/actresses/arisanakanoarisa/"
+    ]
+  },
+  {
+    slug: "nagai-maria",
+    maSo: 164, // mã số trong danh mục nguồn
+    soVideo: 20, // số video trong danh mục nguồn
+    tenDayDu: "Nagai Maria (永井マリア)",
+    tenThuongGoi: "Maria Nagai",
+    ngaySinh: "1996-12-18", // thân bài Wikipedia ghi 1996-03-30 (hồ sơ debut), xem GHI-CHU-DU-LIEU.md
+    queQuan: "Aichi",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "Magiito",
+    chieuCao: 159, // cm
+    canNang: 80, // kg
+    soDo: "89–58–95", // theo FANZA — Wikipedia ghi số đo hiện tại 120–60–125 sau thay đổi thể hình, xem GHI-CHU-DU-LIEU.md
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật.",
+    nguon: [
+      "https://www.weblio.jp/content/永井マリア",
+      "https://www.wikidata.org/wiki/Q76970637",
+      "https://av-joyu-db.com/actresses/nagai-maria/"
+    ]
+  },
+  {
+    slug: "yuzuki-marina",
+    maSo: 166, // mã số trong danh mục nguồn
+    soVideo: 33, // số video trong danh mục nguồn
+    tenDayDu: "Yuzuki Marina (優月まりな)",
+    tenThuongGoi: "Akizuki Marina",
+    ngaySinh: "1994-08-25",
+    queQuan: "",
+    noiSong: "",
+    ngheNghiep: "Diễn viên",
+    nhomHoacCongTy: "",
+    chieuCao: 148, // cm
+    canNang: "", // chưa có nguồn công khai đáng tin
+    soDo: "108–58–85",
+    mangXaHoi: [],
+    tieuSu: "Diễn viên AV người Nhật. Từ 08/2024 dùng tên Akizuki Marina.",
+    nguon: [
+      "https://www.themoviedb.org/person/2221928"
     ]
   }
 
