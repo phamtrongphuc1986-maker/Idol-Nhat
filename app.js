@@ -41,6 +41,12 @@ function tenHienThi(p) {
   return p.tenThuongGoi || p.tenDayDu || "";
 }
 
+// Tên dùng để sắp xếp ABC: phần romaji của tên đầy đủ (bỏ phần chữ Nhật trong ngoặc)
+function tenSapXep(p) {
+  const t = (p.tenDayDu || "").replace(/\s*[（(][^）)]*[）)]\s*/g, " ").trim();
+  return t || p.tenThuongGoi || "";
+}
+
 // Huy hiệu thứ hạng XVideos (danh mục châu Á) gắn trên ảnh chính:
 // hạng tăng so với lần ghi trước -> mũi tên xanh lá chỉ lên; giảm -> mũi tên đỏ chỉ xuống.
 function huyHieuHang(p) {
@@ -158,6 +164,15 @@ function veLuoi() {
     const tuoi = tinhTuoi(p.ngaySinh);
     if (tuoi !== null && (tuoi < boLoc.tuoiMin || tuoi > boLoc.tuoiMax)) return false;
     return true;
+  });
+
+  // Thứ tự: có hạng thì hạng nhỏ lên trước (tăng dần); chưa có hạng xếp sau, theo ABC tiếng Việt
+  ds.sort(function (a, b) {
+    const ha = a.hangXV || 0, hb = b.hangXV || 0;
+    if (ha && hb && ha !== hb) return ha - hb;
+    if (ha && !hb) return -1;
+    if (!ha && hb) return 1;
+    return tenSapXep(a).localeCompare(tenSapXep(b), "vi");
   });
 
   document.getElementById("ket-qua").textContent = "Hiển thị " + ds.length + " / " + HO_SO.length + " hồ sơ";
