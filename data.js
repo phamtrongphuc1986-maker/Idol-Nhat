@@ -33,6 +33,7 @@
 const HO_SO = [
   {
     slug: "oshikawa-yuri",
+    hangXV: 929, // hạng XVideos châu Á — trích xuất 05/11/2026
     tenDayDu: "Oshikawa Yūri (推川ゆうり)",
     tenThuongGoi: "Yuri Oshikawa",
     ngaySinh: "1990-06-13",
@@ -70,6 +71,7 @@ const HO_SO = [
   },
   {
     slug: "enami-ryu",
+    hangXV: 251, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 173, // mã số trong danh mục nguồn — user đối chiếu ở đợt 4, hồ sơ này đã có từ đợt 1
     soVideo: 95, // số video trong danh mục nguồn
     tenDayDu: "Enami Ryū (江波りゅう)",
@@ -432,6 +434,7 @@ const HO_SO = [
   },
   {
     slug: "asuka-kirara",
+    hangXV: 1341, // hạng XVideos châu Á — trích xuất 05/11/2026
     tenDayDu: "Asuka Kirara (明日花キララ)",
     tenThuongGoi: "Kirara Asuka",
     ngaySinh: "1988-10-02",
@@ -451,6 +454,7 @@ const HO_SO = [
   },
   {
     slug: "mishima-natsuko",
+    hangXV: 316, // hạng XVideos châu Á — trích xuất 05/11/2026
     tenDayDu: "Mishima Natsuko (三島奈津子)",
     tenThuongGoi: "Natsuko Mishima",
     ngaySinh: "1982-11-30",
@@ -486,6 +490,7 @@ const HO_SO = [
   },
   {
     slug: "shibuya-kaho",
+    hangXV: 341, // hạng XVideos châu Á — trích xuất 05/11/2026
     tenDayDu: "Shibuya Kaho (澁谷果歩)",
     tenThuongGoi: "Kaho Shibuya",
     ngaySinh: "1991-05-20",
@@ -673,6 +678,7 @@ const HO_SO = [
   },
   {
     slug: "kazama-yumi",
+    hangXV: 404, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 228, // mã số trong danh mục nguồn — user đối chiếu ở đợt 3, hồ sơ này đã có từ đợt 2
     tenDayDu: "Kazama Yumi (風間ゆみ)",
     tenThuongGoi: "Kazama Yumi (biến thể: Yume Kazama)",
@@ -697,6 +703,7 @@ const HO_SO = [
   // ================= ĐỢT 3 =================
   {
     slug: "narimiya-harua",
+    hangXV: 376, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 206,
     soVideo: 80, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Narimiya Harua (成宮はるあ)",
@@ -719,6 +726,7 @@ const HO_SO = [
   },
   {
     slug: "minami-airi",
+    hangXV: 332, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 208,
     soVideo: 141, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Minami Airi (みなみ愛梨)",
@@ -741,6 +749,7 @@ const HO_SO = [
   },
   {
     slug: "kisaki-aya",
+    hangXV: 232, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 211,
     soVideo: 138, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Kisaki Aya (希咲あや)",
@@ -764,6 +773,7 @@ const HO_SO = [
   },
   {
     slug: "anjo-anna",
+    hangXV: 282, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 213,
     soVideo: 146, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Anjo Anna (安城アンナ)",
@@ -784,6 +794,7 @@ const HO_SO = [
   },
   {
     slug: "nakajima-kyoko",
+    hangXV: 475, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 214,
     soVideo: 51, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Nakajima Kyoko (中島京子)",
@@ -806,6 +817,7 @@ const HO_SO = [
   },
   {
     slug: "sakazaki-miho",
+    hangXV: 297, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 215,
     soVideo: 92, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Sakazaki Miho (坂咲みほ)",
@@ -852,6 +864,7 @@ const HO_SO = [
   },
   {
     slug: "ninomiya-nana",
+    hangXV: 347, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 217,
     soVideo: 92, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Ninomiya Nana (二宮ナナ)",
@@ -872,6 +885,7 @@ const HO_SO = [
   },
   {
     slug: "tomoda-ayaka",
+    hangXV: 318, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 218,
     soVideo: 58, // số video trong danh mục nguồn — bổ sung ở đợt 9 từ ảnh danh mục
     tenDayDu: "Tomoda Ayaka (友田彩也香)",
@@ -895,6 +909,7 @@ const HO_SO = [
   },
   {
     slug: "omomo-risa",
+    hangXV: 176, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 219,
     tenDayDu: "Ōmomo Risa (大桃りさ)",
     tenThuongGoi: "Risa Oomomo",
@@ -914,6 +929,7 @@ const HO_SO = [
   },
   {
     slug: "hara-chitose",
+    hangXV: 451, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 220,
     tenDayDu: "Hara Chitose (原ちとせ)",
     tenThuongGoi: "Chitose Hara",
@@ -933,6 +949,7 @@ const HO_SO = [
   },
   {
     slug: "hayakawa-mizuki",
+    hangXV: 372, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 221,
     tenDayDu: "Hayakawa Mizuki (早川瑞希)",
     tenThuongGoi: "Wakamiya Hazuki",
@@ -955,6 +972,7 @@ const HO_SO = [
   },
   {
     slug: "otowa-reon",
+    hangXV: 427, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 222,
     tenDayDu: "Otowa Reon (音羽レオン)",
     tenThuongGoi: "Reon Otowa",
@@ -974,6 +992,7 @@ const HO_SO = [
   },
   {
     slug: "mihara-honoka",
+    hangXV: 314, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 223,
     tenDayDu: "Mihara Honoka (三原ほのか)",
     tenThuongGoi: "Honoka Mihara",
@@ -1014,6 +1033,7 @@ const HO_SO = [
   },
   {
     slug: "aizawa-karin",
+    hangXV: 425, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 225,
     tenDayDu: "Aizawa Karin (愛沢かりん)",
     tenThuongGoi: "Karin Aizawa",
@@ -1033,6 +1053,7 @@ const HO_SO = [
   },
   {
     slug: "ayase-tiara",
+    hangXV: 250, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 226,
     tenDayDu: "Ayase Tiara (綾瀬ティアラ)",
     tenThuongGoi: "Tiara Ayase",
@@ -1054,6 +1075,7 @@ const HO_SO = [
   },
   {
     slug: "yuuki-aoi",
+    hangXV: 280, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 227,
     tenDayDu: "Yuuki Aoi (優木あおい)",
     tenThuongGoi: "Aoi Yuuki",
@@ -1075,6 +1097,7 @@ const HO_SO = [
   },
   {
     slug: "ozawa-alice",
+    hangXV: 499, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 230,
     tenDayDu: "Ozawa Alice (小沢アリス)",
     tenThuongGoi: "Alice Ozawa",
@@ -1098,6 +1121,7 @@ const HO_SO = [
   },
   {
     slug: "akino-chihiro",
+    hangXV: 287, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 236,
     tenDayDu: "Akino Chihiro (秋野千尋)",
     tenThuongGoi: "Chihiro Akino",
@@ -1140,6 +1164,7 @@ const HO_SO = [
   },
   {
     slug: "kinoshita-himari",
+    hangXV: 252, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 238,
     tenDayDu: "Kinoshita Himari (木下ひまり)",
     tenThuongGoi: "Himari Kinoshita",
@@ -1165,6 +1190,7 @@ const HO_SO = [
   // ================= ĐỢT 4 =================
   {
     slug: "ohara-reina",
+    hangXV: 85, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 174,
     soVideo: 20,
     tenDayDu: "Ohara Reina (大原伶菜)",
@@ -1189,6 +1215,7 @@ const HO_SO = [
   },
   {
     slug: "mizuno-asahi",
+    hangXV: 279, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 175,
     soVideo: 12,
     tenDayDu: "Mizuno Asahi (水野朝陽)",
@@ -1212,6 +1239,7 @@ const HO_SO = [
   },
   {
     slug: "sayama-ai",
+    hangXV: 418, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 177,
     soVideo: 1,
     tenDayDu: "Sayama Ai (佐山愛)",
@@ -1255,6 +1283,7 @@ const HO_SO = [
   },
   {
     slug: "saionji-reo",
+    hangXV: 583, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 180,
     soVideo: 51,
     tenDayDu: "Saionji Reo (西園寺れお)",
@@ -1275,6 +1304,7 @@ const HO_SO = [
   },
   {
     slug: "onodera-risa",
+    hangXV: 260, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 184,
     soVideo: 17,
     tenDayDu: "Onodera Risa (小野寺梨紗)",
@@ -1320,6 +1350,7 @@ const HO_SO = [
   },
   {
     slug: "maisaki-mikuni",
+    hangXV: 307, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 190,
     soVideo: 78,
     tenDayDu: "Maisaki Mikuni (舞咲みくに)",
@@ -1342,6 +1373,7 @@ const HO_SO = [
   },
   {
     slug: "uchimura-rina",
+    hangXV: 384, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 193,
     soVideo: 43,
     tenDayDu: "Uchimura Rina (内村りな)",
@@ -1364,6 +1396,7 @@ const HO_SO = [
   },
   {
     slug: "otsuka-saki",
+    hangXV: 540, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 194,
     soVideo: 65,
     tenDayDu: "Otsuka Saki (大塚咲)",
@@ -1384,6 +1417,7 @@ const HO_SO = [
   },
   {
     slug: "mihoshi-ruka",
+    hangXV: 552, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 195,
     soVideo: 59,
     tenDayDu: "Mihoshi Ruka (美星るか)",
@@ -1406,6 +1440,7 @@ const HO_SO = [
   },
   {
     slug: "shino-megumi",
+    hangXV: 156, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 196,
     soVideo: 197,
     tenDayDu: "Shino Megumi (篠めぐみ)",
@@ -1428,6 +1463,7 @@ const HO_SO = [
   },
   {
     slug: "suzuha-miu",
+    hangXV: 235, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 197,
     soVideo: 102,
     tenDayDu: "Suzuha Miu (鈴羽みう)",
@@ -1471,6 +1507,7 @@ const HO_SO = [
   },
   {
     slug: "yokoyama-mirei",
+    hangXV: 170, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 200,
     soVideo: 81,
     tenDayDu: "Yokoyama Mirei (横山みれい)",
@@ -1494,6 +1531,7 @@ const HO_SO = [
   },
   {
     slug: "tachibana-mary",
+    hangXV: 298, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 203,
     soVideo: 58,
     tenDayDu: "Tachibana Mary (橘メアリー)",
@@ -1517,6 +1555,7 @@ const HO_SO = [
   },
   {
     slug: "kuroki-kotone",
+    hangXV: 326, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 204,
     soVideo: 51,
     tenDayDu: "Kuroki Kotone (黒木琴音)",
@@ -1562,6 +1601,7 @@ const HO_SO = [
   },
   {
     slug: "koizumi-nozomi",
+    hangXV: 310, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 167,
     soVideo: 69,
     tenDayDu: "Koizumi Nozomi (小泉のぞみ)",
@@ -1585,6 +1625,7 @@ const HO_SO = [
   },
   {
     slug: "sakuragi-rin",
+    hangXV: 549, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 168,
     soVideo: 51,
     tenDayDu: "Sakuragi Rin (桜木凛)",
@@ -1629,6 +1670,7 @@ const HO_SO = [
   },
   {
     slug: "orihara-honoka",
+    hangXV: 225, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 172,
     soVideo: 101,
     maSoThem: [28], // mục #28 "Akai Mitsuki" trong danh mục nguồn là chính cô thời 2012–2014 — gộp, xem GHI-CHU đợt 6
@@ -1694,6 +1736,7 @@ const HO_SO = [
   },
   {
     slug: "ohashi-miku",
+    hangXV: 83, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 14,
     soVideo: 74,
     tenDayDu: "Ohashi Miku (大橋未久)",
@@ -1758,6 +1801,7 @@ const HO_SO = [
   },
   {
     slug: "kobayakawa-reiko",
+    hangXV: 333, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 22,
     soVideo: 97,
     tenDayDu: "Kobayakawa Reiko (小早川怜子)",
@@ -1823,6 +1867,7 @@ const HO_SO = [
   },
   {
     slug: "saeki-yukina",
+    hangXV: 202, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 27,
     soVideo: 55,
     tenDayDu: "Saeki Yukina (佐伯ゆきな)",
@@ -1844,6 +1889,7 @@ const HO_SO = [
   },
   {
     slug: "natsuki-maron",
+    hangXV: 88, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 30,
     soVideo: 119,
     tenDayDu: "Natsuki Maron (夏希まろん)",
@@ -1885,6 +1931,7 @@ const HO_SO = [
   },
   {
     slug: "kanae-ruka",
+    hangXV: 100, // hạng XVideos châu Á — trích xuất 05/11/2026
     tenDayDu: "Kanae Ruka (佳苗るか)",
     tenThuongGoi: "Ruka Kanae",
     ngaySinh: "1993-03-04",
@@ -1904,6 +1951,7 @@ const HO_SO = [
   },
   {
     slug: "shimizu-risa",
+    hangXV: 173, // hạng XVideos châu Á — trích xuất 05/11/2026
     tenDayDu: "Shimizu Risa (清水理紗)",
     tenThuongGoi: "Risa Shimizu",
     ngaySinh: "1993-08-08", // thân bài Wikipedia JA + đa số CSDL — infobox Wikipedia tự ghi 1994, xem GHI-CHU-DU-LIEU.md
@@ -2005,6 +2053,7 @@ const HO_SO = [
   },
   {
     slug: "okazaki-emiri",
+    hangXV: 136, // hạng XVideos châu Á — trích xuất 05/11/2026
     tenDayDu: "Okazaki Emiri (丘咲エミリ)",
     tenThuongGoi: "Emiri Okazaki",
     ngaySinh: "1991-04-10", // ngày sinh trong hồ sơ AV — ngày sinh thật cô tự công khai là 11/01/1989, xem GHI-CHU-DU-LIEU.md
@@ -2046,6 +2095,7 @@ const HO_SO = [
   // ================= ĐỢT 8 =================
   {
     slug: "ichijo-rion",
+    hangXV: 410, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 50, // mã số trong danh mục nguồn
     soVideo: 50, // số video trong danh mục nguồn
     tenDayDu: "Ichijo Rion (一条リオン)",
@@ -2085,6 +2135,7 @@ const HO_SO = [
   },
   {
     slug: "misaki-yui",
+    hangXV: 131, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 53, // mã số trong danh mục nguồn
     soVideo: 103, // số video trong danh mục nguồn
     tenDayDu: "Misaki Yui (美咲結衣)",
@@ -2105,6 +2156,7 @@ const HO_SO = [
   },
   {
     slug: "nishikawa-yui",
+    hangXV: 228, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 54, // mã số trong danh mục nguồn
     soVideo: 176, // số video trong danh mục nguồn
     tenDayDu: "Nishikawa Yui (西川ゆい)",
@@ -2145,6 +2197,7 @@ const HO_SO = [
   },
   {
     slug: "yoshikawa-aimi",
+    hangXV: 89, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 57, // mã số trong danh mục nguồn
     soVideo: 39, // số video trong danh mục nguồn
     tenDayDu: "Yoshikawa Aimi (吉川あいみ)",
@@ -2165,6 +2218,7 @@ const HO_SO = [
   },
   {
     slug: "aoi-chie",
+    hangXV: 266, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 58, // mã số trong danh mục nguồn
     soVideo: 36, // số video trong danh mục nguồn
     tenDayDu: "Aoi Chie (葵千恵)",
@@ -2229,6 +2283,7 @@ const HO_SO = [
   },
   {
     slug: "tsukamoto-yuki",
+    hangXV: 94, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 62, // mã số trong danh mục nguồn
     soVideo: 50, // số video trong danh mục nguồn
     tenDayDu: "Tsukamoto Yuki (つかもと友希)",
@@ -2250,6 +2305,7 @@ const HO_SO = [
   },
   {
     slug: "kasugano-yui",
+    hangXV: 98, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 64, // mã số trong danh mục nguồn
     soVideo: 113, // số video trong danh mục nguồn
     tenDayDu: "Kasugano Yui (春日野結衣)",
@@ -2272,6 +2328,7 @@ const HO_SO = [
   },
   {
     slug: "shirosaki-aoi",
+    hangXV: 4292, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 65, // mã số trong danh mục nguồn
     soVideo: 21, // số video trong danh mục nguồn
     tenDayDu: "Shirosaki Aoi (白咲碧)",
@@ -2293,6 +2350,7 @@ const HO_SO = [
   },
   {
     slug: "sakai-momoka",
+    hangXV: 363, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 66, // mã số trong danh mục nguồn
     soVideo: 38, // số video trong danh mục nguồn
     tenDayDu: "Sakai Momoka (さかいももか)",
@@ -2314,6 +2372,7 @@ const HO_SO = [
   },
   {
     slug: "maeda-kaori",
+    hangXV: 119, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 67, // mã số trong danh mục nguồn
     soVideo: 106, // số video trong danh mục nguồn
     tenDayDu: "Maeda Kaori (前田かおり)",
@@ -2334,6 +2393,7 @@ const HO_SO = [
   },
   {
     slug: "haruna-hana",
+    hangXV: 90, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 68, // mã số trong danh mục nguồn
     soVideo: 34, // số video trong danh mục nguồn
     tenDayDu: "Haruna Hana (春菜はな)",
@@ -2354,6 +2414,7 @@ const HO_SO = [
   },
   {
     slug: "matsumoto-mei",
+    hangXV: 196, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 71, // mã số trong danh mục nguồn
     soVideo: 71, // số video trong danh mục nguồn
     tenDayDu: "Matsumoto Mei (松本メイ)",
@@ -2376,6 +2437,7 @@ const HO_SO = [
   },
   {
     slug: "momotani-erika",
+    hangXV: 175, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 73, // mã số trong danh mục nguồn
     soVideo: 1, // số video trong danh mục nguồn
     tenDayDu: "Momotani Erika (桃谷エリカ)",
@@ -2396,6 +2458,7 @@ const HO_SO = [
   },
   {
     slug: "ninomiya-waka",
+    hangXV: 106, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 74, // mã số trong danh mục nguồn
     soVideo: 52, // số video trong danh mục nguồn
     tenDayDu: "Ninomiya Waka (二宮和香)",
@@ -2418,6 +2481,7 @@ const HO_SO = [
   },
   {
     slug: "koda-rina",
+    hangXV: 2571, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 75, // mã số trong danh mục nguồn
     soVideo: 85, // số video trong danh mục nguồn
     tenDayDu: "Koda Rina (倖田りな)",
@@ -2437,6 +2501,7 @@ const HO_SO = [
   },
   {
     slug: "murakami-risa",
+    hangXV: 276, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 76, // mã số trong danh mục nguồn
     soVideo: 23, // số video trong danh mục nguồn
     tenDayDu: "Murakami Risa (村上里沙)",
@@ -2479,6 +2544,7 @@ const HO_SO = [
   },
   {
     slug: "sakurai-ria",
+    hangXV: 370, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 79, // mã số trong danh mục nguồn
     soVideo: 65, // số video trong danh mục nguồn
     tenDayDu: "Sakurai Ria (桜井りあ)",
@@ -2519,6 +2585,7 @@ const HO_SO = [
   },
   {
     slug: "niiyama-kaede",
+    hangXV: 107, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 85, // mã số trong danh mục nguồn
     soVideo: 127, // số video trong danh mục nguồn
     tenDayDu: "Niiyama Kaede (新山かえで)",
@@ -2541,6 +2608,7 @@ const HO_SO = [
   },
   {
     slug: "mizuki-yume",
+    hangXV: 81, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 86, // mã số trong danh mục nguồn
     soVideo: 125, // số video trong danh mục nguồn
     tenDayDu: "Mizuki Yume (美月優芽)",
@@ -2561,6 +2629,7 @@ const HO_SO = [
   },
   {
     slug: "maeda-hina",
+    hangXV: 143, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 92, // mã số trong danh mục nguồn
     soVideo: 110, // số video trong danh mục nguồn
     tenDayDu: "Maeda Hina (前田陽菜)",
@@ -2581,6 +2650,7 @@ const HO_SO = [
   },
   {
     slug: "mano-yuria",
+    hangXV: 220, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 93, // mã số trong danh mục nguồn
     soVideo: 141, // số video trong danh mục nguồn
     tenDayDu: "Mano Yuria (真野ゆりあ)",
@@ -2603,6 +2673,7 @@ const HO_SO = [
   },
   {
     slug: "himekawa-yuuna",
+    hangXV: 111, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 99, // mã số trong danh mục nguồn
     soVideo: 56, // số video trong danh mục nguồn
     tenDayDu: "Himekawa Yuuna (姫川ゆうな)",
@@ -2623,6 +2694,7 @@ const HO_SO = [
   },
   {
     slug: "akimoto-mayuka",
+    hangXV: 138, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 100, // mã số trong danh mục nguồn
     soVideo: 107, // số video trong danh mục nguồn
     tenDayDu: "Akimoto Mayuka (秋元まゆ花)",
@@ -2643,6 +2715,7 @@ const HO_SO = [
   },
   {
     slug: "iwasa-ayumi",
+    hangXV: 219, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 102, // mã số trong danh mục nguồn
     soVideo: 63, // số video trong danh mục nguồn
     tenDayDu: "Iwasa Ayumi (岩佐あゆみ)",
@@ -2663,6 +2736,7 @@ const HO_SO = [
   },
   {
     slug: "ichinose-ameri",
+    hangXV: 348, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 103, // mã số trong danh mục nguồn
     soVideo: 4, // số video trong danh mục nguồn
     tenDayDu: "Ichinose Ameri (一ノ瀬アメリ)",
@@ -2683,6 +2757,7 @@ const HO_SO = [
   },
   {
     slug: "tachibana-misuzu",
+    hangXV: 505, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 105, // mã số trong danh mục nguồn
     soVideo: 43, // số video trong danh mục nguồn
     tenDayDu: "Tachibana Misuzu (橘美鈴)",
@@ -2702,6 +2777,7 @@ const HO_SO = [
   },
   {
     slug: "ono-machiko",
+    hangXV: 408, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 106, // mã số trong danh mục nguồn
     soVideo: 18, // số video trong danh mục nguồn
     tenDayDu: "Ono Machiko (尾野真知子)",
@@ -2722,6 +2798,7 @@ const HO_SO = [
   },
   {
     slug: "mizuki-nao",
+    hangXV: 414, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 107, // mã số trong danh mục nguồn
     soVideo: 90, // số video trong danh mục nguồn
     tenDayDu: "Mizuki Nao (水城奈緒)",
@@ -2762,6 +2839,7 @@ const HO_SO = [
   },
   {
     slug: "ariga-yua",
+    hangXV: 135, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 109, // mã số trong danh mục nguồn
     soVideo: 190, // số video trong danh mục nguồn
     tenDayDu: "Ariga Yua (有賀ゆあ)",
@@ -2782,6 +2860,7 @@ const HO_SO = [
   },
   {
     slug: "ozawa-maria",
+    hangXV: 149, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 110, // mã số trong danh mục nguồn
     soVideo: 79, // số video trong danh mục nguồn
     tenDayDu: "Ozawa Maria (小澤マリア)",
@@ -2802,6 +2881,7 @@ const HO_SO = [
   },
   {
     slug: "haruka-megumi",
+    hangXV: 172, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 111, // mã số trong danh mục nguồn
     soVideo: 113, // số video trong danh mục nguồn
     tenDayDu: "Haruka Megumi (遥めぐみ)",
@@ -2822,6 +2902,7 @@ const HO_SO = [
   },
   {
     slug: "kasuga-yui",
+    hangXV: 337, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 115, // mã số trong danh mục nguồn
     soVideo: 90, // số video trong danh mục nguồn
     tenDayDu: "Kasuga Yui (春日由衣)",
@@ -2842,6 +2923,7 @@ const HO_SO = [
   },
   {
     slug: "sakurai-tomoka",
+    hangXV: 194, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 117, // mã số trong danh mục nguồn
     soVideo: 78, // số video trong danh mục nguồn
     tenDayDu: "Sakurai Tomoka (櫻井ともか)",
@@ -2864,6 +2946,7 @@ const HO_SO = [
   // ================= ĐỢT 9 =================
   {
     slug: "mikami-yua",
+    hangXV: 352, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 118, // mã số trong danh mục nguồn
     soVideo: 1, // số video trong danh mục nguồn
     tenDayDu: "Mikami Yua (三上悠亜)",
@@ -2885,6 +2968,7 @@ const HO_SO = [
   },
   {
     slug: "misono-waka",
+    hangXV: 153, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 119, // mã số trong danh mục nguồn
     soVideo: 113, // số video trong danh mục nguồn
     tenDayDu: "Misono Waka (美園和花)",
@@ -2906,6 +2990,7 @@ const HO_SO = [
   },
   {
     slug: "kawamura-maya",
+    hangXV: 306, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 121, // mã số trong danh mục nguồn
     soVideo: 98, // số video trong danh mục nguồn
     tenDayDu: "Kawamura Maya (川村まや)",
@@ -2927,6 +3012,7 @@ const HO_SO = [
   },
   {
     slug: "yayoi-mizuki",
+    hangXV: 129, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 122, // mã số trong danh mục nguồn
     soVideo: 143, // số video trong danh mục nguồn
     tenDayDu: "Yayoi Mizuki (弥生みづき)",
@@ -2994,6 +3080,7 @@ const HO_SO = [
   },
   {
     slug: "honma-yuri",
+    hangXV: 213, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 125, // mã số trong danh mục nguồn
     soVideo: 38, // số video trong danh mục nguồn
     tenDayDu: "Honma Yuri (本真ゆり)",
@@ -3018,6 +3105,7 @@ const HO_SO = [
   },
   {
     slug: "nishina-momoka",
+    hangXV: 301, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 126, // mã số trong danh mục nguồn
     soVideo: 4, // số video trong danh mục nguồn
     tenDayDu: "Nishina Momoka (仁科百華)",
@@ -3039,6 +3127,7 @@ const HO_SO = [
   },
   {
     slug: "hayama-hitomi",
+    hangXV: 278, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 127, // mã số trong danh mục nguồn
     soVideo: 20, // số video trong danh mục nguồn
     tenDayDu: "Hayama Hitomi (葉山瞳)",
@@ -3059,6 +3148,7 @@ const HO_SO = [
   },
   {
     slug: "nagasawa-maomi",
+    hangXV: 4227, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 128, // mã số trong danh mục nguồn
     soVideo: 54, // số video trong danh mục nguồn
     tenDayDu: "Nagasawa Maomi (永沢まおみ)",
@@ -3080,6 +3170,7 @@ const HO_SO = [
   },
   {
     slug: "nagasawa-azusa",
+    hangXV: 162, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 129, // mã số trong danh mục nguồn
     soVideo: 71, // số video trong danh mục nguồn
     tenDayDu: "Nagasawa Azusa (長澤あずさ)",
@@ -3101,6 +3192,7 @@ const HO_SO = [
   },
   {
     slug: "hanyu-arisa",
+    hangXV: 117, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 130, // mã số trong danh mục nguồn
     soVideo: 134, // số video trong danh mục nguồn
     tenDayDu: "Hanyu Arisa (羽生アリサ)",
@@ -3122,6 +3214,7 @@ const HO_SO = [
   },
   {
     slug: "ono-maria",
+    hangXV: 187, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 131, // mã số trong danh mục nguồn
     soVideo: 69, // số video trong danh mục nguồn
     tenDayDu: "Ono Maria (小野麻里亜)",
@@ -3143,6 +3236,7 @@ const HO_SO = [
   },
   {
     slug: "horiguchi-maki",
+    hangXV: 217, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 132, // mã số trong danh mục nguồn
     soVideo: 33, // số video trong danh mục nguồn
     tenDayDu: "Horiguchi Maki (堀口真希)",
@@ -3163,6 +3257,7 @@ const HO_SO = [
   },
   {
     slug: "ichikawa-minori",
+    hangXV: 510, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 133, // mã số trong danh mục nguồn
     soVideo: 21, // số video trong danh mục nguồn
     tenDayDu: "Ichikawa Minori (市川みのり)",
@@ -3183,6 +3278,7 @@ const HO_SO = [
   },
   {
     slug: "arai-rima",
+    hangXV: 158, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 137, // mã số trong danh mục nguồn
     soVideo: 84, // số video trong danh mục nguồn
     tenDayDu: "Arai Rima (新井リマ)",
@@ -3204,6 +3300,7 @@ const HO_SO = [
   },
   {
     slug: "maeda-yumi",
+    hangXV: 185, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 139, // mã số trong danh mục nguồn
     soVideo: 131, // số video trong danh mục nguồn
     tenDayDu: "Maeda Yumi (前田由美)",
@@ -3225,6 +3322,7 @@ const HO_SO = [
   },
   {
     slug: "sasaki-aki",
+    hangXV: 304, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 141, // mã số trong danh mục nguồn
     soVideo: 8, // số video trong danh mục nguồn
     tenDayDu: "Sasaki Aki (佐々木あき)",
@@ -3245,6 +3343,7 @@ const HO_SO = [
   },
   {
     slug: "miyashita-kana",
+    hangXV: 424, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 142, // mã số trong danh mục nguồn
     soVideo: 73, // số video trong danh mục nguồn
     tenDayDu: "Miyashita Kana (宮下華奈)",
@@ -3265,6 +3364,7 @@ const HO_SO = [
   },
   {
     slug: "kisaki-ema",
+    hangXV: 134, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 144, // mã số trong danh mục nguồn
     soVideo: 36, // số video trong danh mục nguồn
     tenDayDu: "Kisaki Ema (希咲エマ)",
@@ -3288,6 +3388,7 @@ const HO_SO = [
   },
   {
     slug: "hazuki-nozomi",
+    hangXV: 182, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 145, // mã số trong danh mục nguồn
     soVideo: 128, // số video trong danh mục nguồn
     tenDayDu: "Hazuki Nozomi (羽月希)",
@@ -3311,6 +3412,7 @@ const HO_SO = [
   },
   {
     slug: "oba-yui",
+    hangXV: 224, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 152, // mã số trong danh mục nguồn
     soVideo: 56, // số video trong danh mục nguồn
     tenDayDu: "Oba Yui (大場ゆい)",
@@ -3331,6 +3433,7 @@ const HO_SO = [
   },
   {
     slug: "yoshimura-misaki",
+    hangXV: 303, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 153, // mã số trong danh mục nguồn
     soVideo: 80, // số video trong danh mục nguồn
     tenDayDu: "Yoshimura Misaki (吉村美咲)",
@@ -3352,6 +3455,7 @@ const HO_SO = [
   },
   {
     slug: "miyazawa-chiharu",
+    hangXV: 167, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 155, // mã số trong danh mục nguồn
     soVideo: 117, // số video trong danh mục nguồn
     tenDayDu: "Miyazawa Chiharu (宮沢ちはる)",
@@ -3375,6 +3479,7 @@ const HO_SO = [
   },
   {
     slug: "miyazaki-airi",
+    hangXV: 286, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 156, // mã số trong danh mục nguồn
     soVideo: 95, // số video trong danh mục nguồn
     tenDayDu: "Miyazaki Airi (宮崎愛莉)",
@@ -3397,6 +3502,7 @@ const HO_SO = [
   },
   {
     slug: "jinguji-nao",
+    hangXV: 273, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 157, // mã số trong danh mục nguồn
     soVideo: 6, // số video trong danh mục nguồn
     tenDayDu: "Jinguji Nao (神宮寺ナオ)",
@@ -3417,6 +3523,7 @@ const HO_SO = [
   },
   {
     slug: "nakano-arisa",
+    hangXV: 336, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 158, // mã số trong danh mục nguồn
     soVideo: 21, // số video trong danh mục nguồn
     tenDayDu: "Nakano Arisa (中野ありさ)",
@@ -3459,6 +3566,7 @@ const HO_SO = [
   },
   {
     slug: "yuzuki-marina",
+    hangXV: 116, // hạng XVideos châu Á — trích xuất 05/11/2026
     maSo: 166, // mã số trong danh mục nguồn
     soVideo: 33, // số video trong danh mục nguồn
     tenDayDu: "Yuzuki Marina (優月まりな)",

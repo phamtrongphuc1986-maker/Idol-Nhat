@@ -41,6 +41,18 @@ function tenHienThi(p) {
   return p.tenThuongGoi || p.tenDayDu || "";
 }
 
+// Huy hiệu thứ hạng XVideos (danh mục châu Á) gắn trên ảnh chính:
+// hạng tăng so với lần ghi trước -> mũi tên xanh lá chỉ lên; giảm -> mũi tên đỏ chỉ xuống.
+function huyHieuHang(p) {
+  if (!p.hangXV) return "";
+  let muiTen = "";
+  if (p.hangXVTruoc) {
+    if (p.hangXV < p.hangXVTruoc) muiTen = '<span class="mui-len">▲</span> ';
+    else if (p.hangXV > p.hangXVTruoc) muiTen = '<span class="mui-xuong">▼</span> ';
+  }
+  return '<span class="huy-hang" title="Thứ hạng tại danh mục XVideos châu Á">' + muiTen + "#" + p.hangXV + "</span>";
+}
+
 // Nạp ảnh lần lượt qua các đuôi file; gọi khiXong khi nạp được, khiThatBai khi mọi đuôi đều lỗi.
 function napAnh(img, dsNguon, khiXong, khiThatBai) {
   let i = 0;
@@ -60,10 +72,16 @@ function napAnh(img, dsNguon, khiXong, khiThatBai) {
   img.src = dsNguon[0];
 }
 
+const GOC_ANH_VPS = "https://gia.hialo.vn/anh-idol/";
+
 function nguonAnh(p, tenKhongDuoi) {
-  return DUOI_ANH.map(function (d) {
+  const ds = DUOI_ANH.map(function (d) {
     return "images/" + p.slug + "/" + tenKhongDuoi + "." + d;
   });
+  DUOI_ANH.forEach(function (d) {
+    ds.push(GOC_ANH_VPS + p.slug + "/" + tenKhongDuoi + "." + d);
+  });
+  return ds;
 }
 
 // ===== Trang chủ: lưới + tìm kiếm + bộ lọc =====
@@ -158,7 +176,7 @@ function taoThe(p) {
   a.className = "the";
   a.href = "#/idol/" + encodeURIComponent(p.slug);
   a.innerHTML =
-    '<div class="the-anh"><span class="chu-cai">' + (tenHienThi(p).trim().charAt(0) || "?") + "</span></div>" +
+    '<div class="the-anh"><span class="chu-cai">' + (tenHienThi(p).trim().charAt(0) || "?") + "</span>" + huyHieuHang(p) + "</div>" +
     (p.hoSoMau ? '<span class="nhan-mau">MẪU</span>' : "") +
     '<div class="the-than">' +
       "<h3>" + (p.tenDayDu || "") + "</h3>" +
@@ -208,6 +226,7 @@ function hienChiTiet(slug) {
   themDong("Chiều cao", p.chieuCao ? p.chieuCao + " cm" : "");
   themDong("Cân nặng", p.canNang ? p.canNang + " kg" : "");
   themDong("Số đo 3 vòng", p.soDo);
+  themDong("Thứ hạng (XVideos châu Á)", p.hangXV ? "#" + p.hangXV : "");
 
   const mxh = (p.mangXaHoi || []).filter(function (m) { return m && m.url; });
 
@@ -215,7 +234,7 @@ function hienChiTiet(slug) {
     '<p><a class="nut" href="#/">← Quay lại danh sách</a></p>' +
     (p.hoSoMau ? '<div class="canh-bao-mau">⚠️ HỒ SƠ MẪU — NHÂN VẬT HƯ CẤU. Mọi tên gọi và số liệu đều là bịa đặt để xem bố cục, không phải người thật.</div>' : "") +
     '<div class="chi-tiet-dau">' +
-      '<div class="chi-tiet-anh"><span class="chu-cai">' + (tenHienThi(p).trim().charAt(0) || "?") + "</span></div>" +
+      '<div class="chi-tiet-anh"><span class="chu-cai">' + (tenHienThi(p).trim().charAt(0) || "?") + "</span>" + huyHieuHang(p) + "</div>" +
       '<div class="chi-tiet-ten">' +
         "<h2>" + (p.tenDayDu || "") + "</h2>" +
         (p.tenThuongGoi ? '<p class="ten-goi">' + p.tenThuongGoi + "</p>" : "") +

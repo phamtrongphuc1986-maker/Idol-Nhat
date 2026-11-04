@@ -75,9 +75,19 @@ main { max-width: 1080px; margin: 0 auto; padding: 14px; }
   z-index: 3;
 }
 .the-anh {
+  position: relative;
   aspect-ratio: 3 / 4; background: #ececec;
   display: flex; align-items: center; justify-content: center; overflow: hidden;
 }
+.huy-hang {
+  position: absolute; left: 6px; bottom: 6px; z-index: 2;
+  background: rgba(18, 18, 18, .85); color: #ffffff;
+  font-size: .8rem; font-weight: 700; line-height: 1.25;
+  padding: 3px 9px; border-radius: 999px; letter-spacing: .2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .4);
+}
+.huy-hang .mui-len { color: #3ddc5a; }
+.huy-hang .mui-xuong { color: #ff4d4f; }
 .the-anh img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .the-anh .chu-cai { font-size: 3rem; color: #d6336c; font-weight: 700; }
 .the-than { padding: 10px 4px 10px; }
@@ -108,6 +118,7 @@ main { max-width: 1080px; margin: 0 auto; padding: 14px; }
 }
 .chi-tiet-dau { display: flex; gap: 18px; margin-top: 14px; align-items: flex-start; }
 .chi-tiet-anh {
+  position: relative;
   width: 140px; flex: 0 0 140px; aspect-ratio: 3 / 4;
   background: #ffffff; padding: 8px 8px 22px;
   border-radius: 3px;
