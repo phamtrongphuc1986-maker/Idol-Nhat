@@ -14,6 +14,7 @@ const DUOI_VIDEO = ["mp4", "webm"];
 
 const app = document.getElementById("app");
 const boLoc = { tuKhoa: "", tuoiMin: 18, tuoiMax: 70, nghe: "", que: "" };
+let soHien = 60; // gioi han the hien moi lan ve luoi (nut "Hien thi them" mo tiep)
 
 // ===== Tiện ích =====
 function tinhTuoi(ngaySinh) {
@@ -152,7 +153,8 @@ function hienTrangChu() {
   veLuoi();
 }
 
-function veLuoi() {
+function veLuoi(tuDau) {
+  if (tuDau !== false) soHien = 60;
   const tuKhoa = chuanHoaChuoi(boLoc.tuKhoa);
   const ds = HO_SO.filter(function (p) {
     if (tuKhoa) {
@@ -175,14 +177,27 @@ function veLuoi() {
     return tenSapXep(a).localeCompare(tenSapXep(b), "vi");
   });
 
-  document.getElementById("ket-qua").textContent = "Hiển thị " + ds.length + " / " + HO_SO.length + " hồ sơ";
+  const hien = ds.slice(0, soHien);
+  document.getElementById("ket-qua").textContent = "Hiển thị " + ds.length + " / " + HO_SO.length + " hồ sơ" +
+    (hien.length < ds.length ? " (đang xem " + hien.length + ")" : "");
   const luoi = document.getElementById("luoi");
   luoi.innerHTML = "";
   if (!ds.length) {
     luoi.innerHTML = '<p class="trong">Không tìm thấy hồ sơ phù hợp. Thử nới lỏng bộ lọc.</p>';
     return;
   }
-  ds.forEach(function (p) { luoi.appendChild(taoThe(p)); });
+  hien.forEach(function (p) { luoi.appendChild(taoThe(p)); });
+  if (hien.length < ds.length) {
+    const oThem = document.createElement("div");
+    oThem.className = "o-them";
+    const nut = document.createElement("button");
+    nut.type = "button";
+    nut.className = "nut";
+    nut.textContent = "⬇ Hiển thị thêm (còn " + (ds.length - hien.length) + " hồ sơ)";
+    nut.addEventListener("click", function () { soHien += 120; veLuoi(false); });
+    oThem.appendChild(nut);
+    luoi.appendChild(oThem);
+  }
 }
 
 function taoThe(p) {
@@ -193,6 +208,7 @@ function taoThe(p) {
   a.innerHTML =
     '<div class="the-anh"><span class="chu-cai">' + (tenHienThi(p).trim().charAt(0) || "?") + "</span>" + huyHieuHang(p) + "</div>" +
     (p.hoSoMau ? '<span class="nhan-mau">MẪU</span>' : "") +
+    (p.hoSoCoBan ? '<span class="nhan-coban">CƠ BẢN</span>' : "") +
     '<div class="the-than">' +
       "<h3>" + (p.tenDayDu || "") + "</h3>" +
       (p.tenThuongGoi ? '<p class="ten-goi">' + p.tenThuongGoi + "</p>" : "") +
@@ -242,12 +258,15 @@ function hienChiTiet(slug) {
   themDong("Cân nặng", p.canNang ? p.canNang + " kg" : "");
   themDong("Số đo 3 vòng", p.soDo);
   themDong("Thứ hạng (XVideos châu Á)", p.hangXV ? "#" + p.hangXV : "");
+  themDong("Quốc gia", p.quocGia);
+  themDong("Số video trên XVideos", p.soVideo ? String(p.soVideo) : "");
 
   const mxh = (p.mangXaHoi || []).filter(function (m) { return m && m.url; });
 
   app.innerHTML =
     '<p><a class="nut" href="#/">← Quay lại danh sách</a></p>' +
     (p.hoSoMau ? '<div class="canh-bao-mau">⚠️ HỒ SƠ MẪU — NHÂN VẬT HƯ CẤU. Mọi tên gọi và số liệu đều là bịa đặt để xem bố cục, không phải người thật.</div>' : "") +
+    (p.hoSoCoBan ? '<div class="canh-bao-coban">📋 HỒ SƠ CƠ BẢN — hiện mới có tên, thứ hạng và số video lấy từ danh mục công khai. Ngày sinh và thông tin chi tiết chưa được kiểm chứng nên không hiển thị; hồ sơ sẽ được bổ sung dần sau khi kiểm chứng.</div>' : "") +
     '<div class="chi-tiet-dau">' +
       '<div class="chi-tiet-anh"><span class="chu-cai">' + (tenHienThi(p).trim().charAt(0) || "?") + "</span>" + huyHieuHang(p) + "</div>" +
       '<div class="chi-tiet-ten">' +
@@ -269,10 +288,12 @@ function hienChiTiet(slug) {
       '<div class="mxh">' + mxh.map(function (m) {
         return '<a href="' + m.url + '" target="_blank" rel="noopener noreferrer">' + (m.ten || "Mạng xã hội") + " ↗</a>";
       }).join("") + "</div>" : "") +
-    "<h3>🖼️ Thư viện ảnh (20 ảnh)</h3>" +
-    '<div id="thu-vien"></div>' +
-    "<h3>🎬 Video</h3>" +
-    '<div id="khung-video" class="khung-video"><p class="trong">Đang kiểm tra video...</p></div>';
+    (p.hoSoCoBan ?
+      '<p class="trong">Hồ sơ cơ bản chưa có thư viện ảnh/video.</p>' :
+      "<h3>🖼️ Thư viện ảnh (20 ảnh)</h3>" +
+      '<div id="thu-vien"></div>' +
+      "<h3>🎬 Video</h3>" +
+      '<div id="khung-video" class="khung-video"><p class="trong">Đang kiểm tra video...</p></div>');
 
   // Ảnh đại diện ở đầu trang chi tiết
   const khungAnh = app.querySelector(".chi-tiet-anh");
@@ -286,7 +307,8 @@ function hienChiTiet(slug) {
     function () { imgDaiDien.remove(); });
   khungAnh.prepend(imgDaiDien);
 
-  // Thư viện 20 ảnh: 4 nhóm x 5 ô; ô nào chưa có ảnh thì hiện tên file cần đặt
+  // Thư viện 20 ảnh + video: chỉ hồ sơ đầy đủ mới dò (hồ sơ cơ bản chưa có thư mục media)
+  if (!p.hoSoCoBan) {
   const thuVien = document.getElementById("thu-vien");
   NHOM_TRANG_PHUC.forEach(function (nhom) {
     const muc = document.createElement("section");
@@ -321,6 +343,7 @@ function hienChiTiet(slug) {
 
   // Video: dò video-01..06 trong videos/<slug>/
   napVideo(p, document.getElementById("khung-video"));
+  }
 }
 
 function thuTaiVideo(src) {

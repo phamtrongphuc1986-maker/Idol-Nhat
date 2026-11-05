@@ -104,6 +104,12 @@ main { max-width: 1080px; margin: 0 auto; padding: 14px; }
   background: #e03131; color: #fff; font-size: .72rem; font-weight: 700;
   padding: 3px 8px; border-radius: 6px; letter-spacing: .4px;
 }
+.nhan-coban {
+  position: absolute; top: 14px; left: 14px; z-index: 2;
+  background: #1971c2; color: #fff; font-size: .72rem; font-weight: 700;
+  padding: 3px 8px; border-radius: 6px; letter-spacing: .4px;
+}
+.o-them { grid-column: 1 / -1; text-align: center; padding: 14px 0 4px; }
 .trong { color: #9a939e; padding: 18px 6px; }
 
 /* ===== Trang chi tiết ===== */
@@ -114,6 +120,10 @@ main { max-width: 1080px; margin: 0 auto; padding: 14px; }
 .nut:hover { background: #2a2a2a; }
 .canh-bao-mau {
   background: #3a1414; border: 1.5px dashed #e03131; color: #ffb3b3;
+  border-radius: 12px; padding: 12px 14px; margin: 12px 0; font-weight: 600;
+}
+.canh-bao-coban {
+  background: #12283d; border: 1.5px dashed #1971c2; color: #a5d8ff;
   border-radius: 12px; padding: 12px 14px; margin: 12px 0; font-weight: 600;
 }
 .chi-tiet-dau { display: flex; gap: 18px; margin-top: 14px; align-items: flex-start; }
