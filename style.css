@@ -25,7 +25,24 @@ main { max-width: 1080px; margin: 0 auto; padding: 14px; }
 .chan-trang {
   max-width: 1080px; margin: 10px auto 0; padding: 14px 16px 26px;
   color: #8f8894; font-size: .85rem;
+  border-top: 1px solid #2e2e2e;
 }
+.chan-trang-links { line-height: 2; }
+.chan-trang-18 { color: #ffb3b3; }
+
+/* Dải cảnh báo 18+ ở đầu trang (ẩn sau khi xác nhận trong cùng phiên xem) */
+.canh-bao-18 {
+  background: #3a1414; border-bottom: 1.5px dashed #e03131; color: #ffb3b3;
+  padding: 10px 14px; font-size: .92rem;
+  display: flex; gap: 12px; align-items: center; justify-content: center; flex-wrap: wrap;
+  text-align: center;
+}
+.canh-bao-18[hidden] { display: none; }
+.canh-bao-18 button {
+  background: #e03131; color: #fff; border: none; border-radius: 999px;
+  padding: 7px 14px; font-size: .9rem; font-weight: 700; cursor: pointer; flex: none;
+}
+.canh-bao-18 button:hover { background: #c92a2a; }
 
 /* ===== Bộ lọc ===== */
 .bo-loc {
