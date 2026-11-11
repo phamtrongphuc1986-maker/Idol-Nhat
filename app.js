@@ -80,11 +80,15 @@ function napAnh(img, dsNguon, khiXong, khiThatBai) {
 }
 
 const GOC_ANH_VPS = "https://gia.hialo.vn/anh-idol/";
+// Chống cache 404: VPS trả Cache-Control max-age dài nên trình duyệt nào từng dò ô TRỐNG
+// sẽ giữ kết quả "không có ảnh" nhiều ngày dù ảnh đã được tải lên sau đó.
+// Thêm ?v= vào URL ảnh VPS để phá cache cũ; tăng số này mỗi đợt nạp thêm ảnh hàng loạt.
+const PHIEN_BAN_ANH = "20261112";
 
 function nguonAnh(p, tenKhongDuoi) {
   // VPS lên TRƯỚC (ảnh Phúc gửi nằm ở đây), thư mục images/ trên GitHub Pages để dự phòng.
   const ds = DUOI_ANH.map(function (d) {
-    return GOC_ANH_VPS + p.slug + "/" + tenKhongDuoi + "." + d;
+    return GOC_ANH_VPS + p.slug + "/" + tenKhongDuoi + "." + d + "?v=" + PHIEN_BAN_ANH;
   });
   DUOI_ANH.forEach(function (d) {
     ds.push("images/" + p.slug + "/" + tenKhongDuoi + "." + d);
