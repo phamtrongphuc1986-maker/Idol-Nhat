@@ -1,13 +1,13 @@
 "use strict";
 
 // ===== Cấu hình thư viện ảnh/video =====
+// 2 dòng thư viện (user chốt 12/11/2026): dòng 1 = mùa hè + mùa thu, dòng 2 = áo tắm/bikini + nude.
+// Mỗi tiền tố 5 ô -> 2 dòng x 10 ô = 20 ảnh mỗi hồ sơ. KHÔNG còn nhóm mùa đông.
 const NHOM_TRANG_PHUC = [
-  { key: "mua-he", ten: "Trang phục mùa hè" },
-  { key: "mua-thu", ten: "Trang phục mùa thu" },
-  { key: "mua-dong", ten: "Trang phục mùa đông" },
-  { key: "do-boi", ten: "Đồ bơi" }
+  { key: "mua-he-thu", ten: "Trang phục mùa hè / Trang phục mùa thu", tienTo: ["mua-he", "mua-thu"] },
+  { key: "do-boi-nude", ten: "Trang phục áo tắm / Bikini / Nude", tienTo: ["do-boi", "nude"] }
 ];
-const ANH_MOI_NHOM = 5; // 4 nhóm x 5 ảnh = 20 ảnh mỗi hồ sơ
+const ANH_MOI_TIEN_TO = 5; // mỗi tiền tố (mua-he, mua-thu, do-boi, nude) có 5 ô
 const VIDEO_TOI_DA = 6; // dò video-01 .. video-06
 const DUOI_ANH = ["jpg", "png", "webp"];
 const DUOI_VIDEO = ["mp4", "webm"];
@@ -82,16 +82,17 @@ function napAnh(img, dsNguon, khiXong, khiThatBai) {
 const GOC_ANH_VPS = "https://gia.hialo.vn/anh-idol/";
 
 function nguonAnh(p, tenKhongDuoi) {
+  // VPS lên TRƯỚC (ảnh Phúc gửi nằm ở đây), thư mục images/ trên GitHub Pages để dự phòng.
   const ds = DUOI_ANH.map(function (d) {
-    return "images/" + p.slug + "/" + tenKhongDuoi + "." + d;
+    return GOC_ANH_VPS + p.slug + "/" + tenKhongDuoi + "." + d;
   });
-  // Ảnh đại diện từ nguồn chính thức (nếu có): thử trước, lỗi thì tự rơi xuống các nguồn dưới.
+  DUOI_ANH.forEach(function (d) {
+    ds.push("images/" + p.slug + "/" + tenKhongDuoi + "." + d);
+  });
+  // Ảnh đại diện từ nguồn chính thức (nếu có): thử trước cả VPS, lỗi thì tự rơi xuống các nguồn dưới.
   if (tenKhongDuoi === "avatar" && window.ANH_CHINH_THUC && ANH_CHINH_THUC[p.slug] && ANH_CHINH_THUC[p.slug].avatar) {
     ds.unshift(ANH_CHINH_THUC[p.slug].avatar);
   }
-  DUOI_ANH.forEach(function (d) {
-    ds.push(GOC_ANH_VPS + p.slug + "/" + tenKhongDuoi + "." + d);
-  });
   return ds;
 }
 
@@ -338,32 +339,37 @@ function hienChiTiet(slug) {
   if (!p.hoSoCoBan) {
   const thuVien = document.getElementById("thu-vien");
   NHOM_TRANG_PHUC.forEach(function (nhom) {
+    // Danh sách ô của dòng: mỗi tiền tố 5 ô (vd mua-he-01..05 rồi mua-thu-01..05)
+    const cacTen = [];
+    nhom.tienTo.forEach(function (tt) {
+      for (let i = 1; i <= ANH_MOI_TIEN_TO; i++) cacTen.push(tt + "-" + String(i).padStart(2, "0"));
+    });
+    const tongO = cacTen.length;
     const muc = document.createElement("section");
     muc.className = "nhom-anh";
-    muc.innerHTML = "<h3>" + nhom.ten + ' <span class="dem-anh">(0/' + ANH_MOI_NHOM + ")</span></h3>";
+    muc.innerHTML = "<h3>" + nhom.ten + ' <span class="dem-anh">(0/' + tongO + ")</span></h3>";
     const luoiAnh = document.createElement("div");
     luoiAnh.className = "luoi-anh";
     let daCo = 0;
-    for (let i = 1; i <= ANH_MOI_NHOM; i++) {
-      const so = String(i).padStart(2, "0");
-      const tenGoc = nhom.key + "-" + so;
+    cacTen.forEach(function (tenGoc) {
       const o = document.createElement("div");
       o.className = "o-anh";
-      o.innerHTML = '<div class="o-trong"><span>images/' + p.slug + "/" + tenGoc + '.jpg</span><small>Chưa có ảnh — đặt file vào đây</small></div>';
+      o.innerHTML = '<div class="o-trong"><span>' + tenGoc + '.jpg</span><small>Chưa có ảnh</small></div>';
       const img = new Image();
-      img.alt = (p.tenDayDu || "") + " — " + nhom.ten + " " + so;
-      img.loading = "lazy";
+      img.alt = (p.tenDayDu || "") + " — " + nhom.ten + " " + tenGoc;
+      // KHÔNG dùng loading=lazy cho ảnh dò nguồn: ảnh chưa gắn vào trang sẽ bị trình duyệt hoãn tải vô hạn (lỗi thư viện trống đã gặp 12/11).
+      img.loading = "eager";
       (function (oEl, imgEl, mucEl) {
         napAnh(imgEl, nguonAnh(p, tenGoc), function () {
           oEl.innerHTML = "";
           oEl.appendChild(imgEl);
           daCo++;
-          mucEl.querySelector(".dem-anh").textContent = "(" + daCo + "/" + ANH_MOI_NHOM + ")";
+          mucEl.querySelector(".dem-anh").textContent = "(" + daCo + "/" + tongO + ")";
           imgEl.addEventListener("click", function () { moLightbox(imgEl.src); });
         }, function () { /* giữ ô trống giữ chỗ */ });
       })(o, img, muc);
       luoiAnh.appendChild(o);
-    }
+    });
     muc.appendChild(luoiAnh);
     thuVien.appendChild(muc);
   });

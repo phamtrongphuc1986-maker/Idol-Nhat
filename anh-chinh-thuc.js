@@ -1,6 +1,7 @@
 // Ảnh từ NGUỒN CHÍNH THỨC (trang công ty quản lý / MXH chính thức của chính người đó), hiển thị trực tiếp từ máy chủ nguồn, có ghi nguồn.
 // Thêm dần theo từng đợt nghiên cứu. Ảnh tải lỗi sẽ tự ẩn (app.js xử lý onerror).
-window.ANH_CHINH_THUC = {
+window.ANH_CHINH_THUC =
+{
  "yoshikawa-aimi": {
   "avatar": "https://club-chess.com/wp-content/uploads/2023/05/fc8ab18472855683339759115c58d4f7.jpg",
   "anh": [
@@ -433,5 +434,17 @@ window.ANH_CHINH_THUC = {
   ],
   "nguon": "https://ameblo.jp/kusanagi-jane/",
   "tenNguon": "草凪純オフィシャルブログ (Ameba Blog)"
+ },
+ "rei-kamiki-model": {
+  "avatar": "https://bitfan-id.s3.ap-northeast-1.amazonaws.com/store/b9cece43b68c6c5d2a3cc2341f8e66fc.jpg",
+  "anh": [],
+  "nguon": "https://rei-kamiki.bitfan.id/",
+  "tenNguon": "Trang fan club chính thức Rei's Bloom của 神木麗 (Bitfan)"
+ },
+ "hikaru-aoyama": {
+  "avatar": "https://s.butterfly.fan/official-profile/profile/6/YALOlt1SuIU14SNK3pSeup1vA0NccTnP68ZlkZm7.jpg",
+  "anh": [],
+  "nguon": "https://official.01familia.jp/talent/aoyamahikaru",
+  "tenNguon": "ゼロイチファミリア公式プロフィール (01familia)"
  }
 };
