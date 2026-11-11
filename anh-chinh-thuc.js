@@ -492,5 +492,22 @@ window.ANH_CHINH_THUC =
   "anh": [],
   "nguon": "https://official.01familia.jp/talent/aoyamahikaru",
   "tenNguon": "01familia"
+ },
+ "mizuki-shida": {
+  "avatar": "https://hanaya-project.co.jp/wp-content/uploads/shidamizuki_p5-683x1024.webp",
+  "anh": [
+   "https://hanaya-project.co.jp/wp-content/uploads/shidamizuki_p1.webp",
+   "https://hanaya-project.co.jp/wp-content/uploads/shidamizuki_p2.webp",
+   "https://hanaya-project.co.jp/wp-content/uploads/shidamizuki_p3.webp",
+   "https://hanaya-project.co.jp/wp-content/uploads/shidamizuki_p4.webp"
+  ],
+  "nguon": "https://hanaya-project.co.jp/model/shidamizuki/",
+  "tenNguon": "HANAYA PROJECT"
+ },
+ "nina-nishimura": {
+  "avatar": "https://bambi.ne.jp/images/_/model/153/p/1.webp?20261112032619",
+  "anh": [],
+  "nguon": "https://bambi.ne.jp/model.php?id=153",
+  "tenNguon": "Bambi Promotion"
  }
 };
