@@ -85,6 +85,10 @@ function nguonAnh(p, tenKhongDuoi) {
   const ds = DUOI_ANH.map(function (d) {
     return "images/" + p.slug + "/" + tenKhongDuoi + "." + d;
   });
+  // Ảnh đại diện từ nguồn chính thức (nếu có): thử trước, lỗi thì tự rơi xuống các nguồn dưới.
+  if (tenKhongDuoi === "avatar" && window.ANH_CHINH_THUC && ANH_CHINH_THUC[p.slug] && ANH_CHINH_THUC[p.slug].avatar) {
+    ds.unshift(ANH_CHINH_THUC[p.slug].avatar);
+  }
   DUOI_ANH.forEach(function (d) {
     ds.push(GOC_ANH_VPS + p.slug + "/" + tenKhongDuoi + "." + d);
   });
@@ -288,6 +292,10 @@ function hienChiTiet(slug) {
       '<div class="mxh">' + mxh.map(function (m) {
         return '<a href="' + m.url + '" target="_blank" rel="noopener noreferrer">' + (m.ten || "Mạng xã hội") + " ↗</a>";
       }).join("") + "</div>" : "") +
+    (window.ANH_CHINH_THUC && ANH_CHINH_THUC[p.slug] && ANH_CHINH_THUC[p.slug].anh && ANH_CHINH_THUC[p.slug].anh.length ?
+      "<h3>📷 Ảnh từ nguồn chính thức</h3>" +
+      '<div id="anh-chinh-thuc" class="luoi-anh"></div>' +
+      '<p style="font-size:.85em;opacity:.75;margin:2px 0 10px">Ảnh hiển thị trực tiếp từ nguồn chính thức: <a href="' + ANH_CHINH_THUC[p.slug].nguon + '" target="_blank" rel="noopener noreferrer">' + (ANH_CHINH_THUC[p.slug].tenNguon || "trang chính thức") + " ↗</a></p>" : "") +
     (p.hoSoCoBan ?
       '<p class="trong">Hồ sơ cơ bản chưa có thư viện ảnh/video.</p>' :
       "<h3>🖼️ Thư viện ảnh (20 ảnh)</h3>" +
@@ -306,6 +314,25 @@ function hienChiTiet(slug) {
     },
     function () { imgDaiDien.remove(); });
   khungAnh.prepend(imgDaiDien);
+
+  // Ảnh từ nguồn chính thức (nếu có): nạp trực tiếp từ máy chủ của nguồn, ảnh nào lỗi thì tự bỏ ô đó.
+  const khungCT = document.getElementById("anh-chinh-thuc");
+  if (khungCT && window.ANH_CHINH_THUC && ANH_CHINH_THUC[p.slug] && ANH_CHINH_THUC[p.slug].anh) {
+    ANH_CHINH_THUC[p.slug].anh.forEach(function (url) {
+      const o = document.createElement("div");
+      o.className = "o-anh";
+      const im = new Image();
+      im.alt = (p.tenDayDu || "") + " — ảnh chính thức";
+      im.loading = "lazy";
+      im.onerror = function () { o.remove(); };
+      im.onload = function () {
+        im.addEventListener("click", function () { moLightbox(im.src); });
+      };
+      im.src = url;
+      o.appendChild(im);
+      khungCT.appendChild(o);
+    });
+  }
 
   // Thư viện 20 ảnh + video: chỉ hồ sơ đầy đủ mới dò (hồ sơ cơ bản chưa có thư mục media)
   if (!p.hoSoCoBan) {
