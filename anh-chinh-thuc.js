@@ -411,5 +411,17 @@ window.ANH_CHINH_THUC = {
   "anh": [],
   "nguon": "https://www.arche-pro.com/",
   "tenNguon": "ARCHE Production"
+ },
+ "sakura-miura": {
+  "avatar": "https://static.wixstatic.com/media/5cb0c9_1cdcce5aaef0449683f32294200b09aa~mv2.jpg/v1/fill/w_82,h_82,al_c,q_80,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/5cb0c9_1cdcce5aaef0449683f32294200b09aa~mv2.jpg",
+  "anh": [],
+  "nguon": "https://www.arche-pro.com/",
+  "tenNguon": "ARCHE Production 公式サイト"
+ },
+ "misono-mizuhara": {
+  "avatar": "https://summit-pro.sakuraweb.com/wp-content/uploads/models/001.jpg",
+  "anh": [],
+  "nguon": "https://summit-pro.sakuraweb.com/",
+  "tenNguon": "SUMMIT（サミット）公式サイト"
  }
 };
