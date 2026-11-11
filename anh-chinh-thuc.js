@@ -423,5 +423,15 @@ window.ANH_CHINH_THUC = {
   "anh": [],
   "nguon": "https://summit-pro.sakuraweb.com/",
   "tenNguon": "SUMMIT（サミット）公式サイト"
+ },
+ "jun-kusanagi": {
+  "avatar": "https://stat.ameba.jp/user_images/20110712/18/kusanagi-jane/8e/47/j/t02200391_0480085411345933634.jpg?caw=800",
+  "anh": [
+   "https://stat.ameba.jp/user_images/20110712/18/kusanagi-jane/6d/d7/j/t02200391_0480085411345933642.jpg?caw=800",
+   "https://stat.ameba.jp/user_images/20110712/18/kusanagi-jane/ab/d5/j/t02200391_0480085411345933647.jpg?caw=800",
+   "https://stat.ameba.jp/user_images/20110712/18/kusanagi-jane/1e/10/j/t02200391_0480085411345925648.jpg?caw=800"
+  ],
+  "nguon": "https://ameblo.jp/kusanagi-jane/",
+  "tenNguon": "草凪純オフィシャルブログ (Ameba Blog)"
  }
 };
