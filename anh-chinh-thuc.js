@@ -446,5 +446,28 @@ window.ANH_CHINH_THUC =
   "anh": [],
   "nguon": "https://official.01familia.jp/talent/aoyamahikaru",
   "tenNguon": "ゼロイチファミリア公式プロフィール (01familia)"
+ },
+ "noa-eikawa": {
+  "avatar": "https://life-promotion.com/images/model/eikawa-noa.webp",
+  "anh": [],
+  "nguon": "https://life-promotion.com/model/eikawa-noa.php",
+  "tenNguon": "Life Promotion"
+ },
+ "kokoro-ayase-model1": {
+  "avatar": "https://official.nax-pro.com/naxwp/wp-content/uploads/2024/03/%E7%B6%BE%E7%80%AC%E3%81%93%E3%81%93%E3%82%8D_%E3%82%A2%E3%82%A4%E3%82%AD%E3%83%A3%E3%83%83%E3%83%81%E7%94%BB%E5%83%8F-1.jpg",
+  "anh": [
+   "https://official.nax-pro.com/naxwp/wp-content/uploads/2024/03/%E7%B6%BE%E7%80%AC%E3%81%93%E3%81%93%E3%82%8D_%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E7%94%BB%E5%83%8F%E2%91%A0-1024x1820.jpg",
+   "https://official.nax-pro.com/naxwp/wp-content/uploads/2024/03/%E7%B6%BE%E7%80%AC%E3%81%93%E3%81%93%E3%82%8D_%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E7%94%BB%E5%83%8F.jpg",
+   "https://official.nax-pro.com/naxwp/wp-content/uploads/2024/03/%E7%B6%BE%E7%80%AC%E3%81%93%E3%81%93%E3%82%8D_%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E7%94%BB%E5%83%8F%E2%91%A1-1-1024x1820.jpg",
+   "https://official.nax-pro.com/naxwp/wp-content/uploads/2024/03/%E7%B6%BE%E7%80%AC%E3%81%93%E3%81%93%E3%82%8D_%E3%82%AE%E3%83%A3%E3%83%A9%E3%83%AA%E3%83%BC%E7%94%BB%E5%83%8F%E2%91%A2-1024x1820.jpg"
+  ],
+  "nguon": "https://official.nax-pro.com/model/14149",
+  "tenNguon": "Trang hồ sơ chính thức NAX của 綾瀬こころ"
+ },
+ "rin-miyazaki1": {
+  "avatar": "https://summit-pro.sakuraweb.com/wp-content/uploads/models/002.jpg",
+  "anh": [],
+  "nguon": "https://summit-pro.sakuraweb.com/",
+  "tenNguon": "SUMMIT (サミット) — trang chính thức công ty quản lý"
  }
 };
