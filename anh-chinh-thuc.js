@@ -7,7 +7,7 @@
 // tiếp từ máy chủ của nguồn chính thức (trang công ty quản lý
 // hoặc tài khoản MXH chính thức của chính người đó), kèm dòng
 // ghi nguồn dưới thư viện. URL nào lỗi thì ô đó tự biến mất.
-// Đợt 1: top 200 theo hạng XV — 100 hồ sơ đầu, cập nhật 11/11/2026.
+// Top 200 theo hạng XV (hạng 81–449): đã tra đủ 200, cập nhật 11/11/2026.
 // ============================================================
 window.ANH_CHINH_THUC = {
   "yoshikawa-aimi": {
@@ -165,5 +165,41 @@ window.ANH_CHINH_THUC = {
     anh: ["https://stat.ameba.jp/user_images/20120304/03/hi-chamu0221/90/02/j/o0480064011830752487.jpg", "https://stat.ameba.jp/user_images/20110517/03/hi-chamu0221/b7/18/j/o0480064011233091970.jpg", "https://stat.ameba.jp/user_images/20110515/04/hi-chamu0221/69/d6/j/o0480064011228725757.jpg"],
     nguon: "https://www.ameba.jp/profile/general/hi-chamu0221/",
     tenNguon: "Ameba/Ameblo ch\u00ednh th\u1ee9c (trang profile c\u1ee7a c\u00f4 \u1ea5y \u2014 \u5927\u69fb\u3072\u3073\u304d, sinh 1988-02-21)"
+  },
+  "sakazaki-miho": {
+    avatar: "https://pub.linx.live/contents/img.php?model_id=4689&target_id=5&s=2",
+    anh: ["https://pub.linx.live/contents/img.php?model_id=4689&target_id=10&s=t", "https://pub.linx.live/contents/img.php?model_id=4689&target_id=9&s=t", "https://pub.linx.live/contents/img.php?model_id=4689&target_id=11&s=t", "https://pub.linx.live/contents/img.php?model_id=4689&target_id=12&s=t"],
+    nguon: "https://pub.linx.live/contents/model/4689/",
+    tenNguon: "Team LINX\uff08AV\u30d7\u30ed\u30c0\u30af\u30b7\u30e7\u30f3 LINX \u516c\u5f0f\u30b5\u30a4\u30c8\uff09"
+  },
+  "tachibana-mary": {
+    avatar: "https://bitfan-id.s3.ap-northeast-1.amazonaws.com/store/07d20578a9707091ad47557fdae15e02.jpeg",
+    anh: ["https://bitfan-id.s3.ap-northeast-1.amazonaws.com/store/07d20578a9707091ad47557fdae15e02.jpeg"],
+    nguon: "https://memefam.bitfan.id/contents/menu/160704",
+    tenNguon: "\u6a58\u30e1\u30a2\u30ea\u30fc\u516c\u5f0f\u30d5\u30a1\u30f3\u30b5\u30a4\u30c8 (Bitfan)"
+  },
+  "saya-niiyama-1": {
+    avatar: "https://livedoor.blogimg.jp/niiyama_saya/imgs/d/e/deae1382.jpg",
+    anh: ["https://livedoor.blogimg.jp/niiyama_saya/imgs/6/c/6ca31596.jpg", "https://livedoor.blogimg.jp/niiyama_saya/imgs/2/e/2ec529e6.png", "https://livedoor.blogimg.jp/niiyama_saya/imgs/c/2/c2c61380.jpg"],
+    nguon: "http://blog.livedoor.jp/niiyama_saya/",
+    tenNguon: "\u305f\u305d\u304c\u308c\u3055\u3084\u3061\u3083\u3093 - \u65b0\u5c71\u6c99\u5f25\u30aa\u30d5\u30a3\u30b7\u30e3\u30eb\u30d6\u30ed\u30b0 (Livedoor Blog, T-Powers)"
+  },
+  "nozomi-arimura": {
+    avatar: "https://prd.resource-api.lit.link/v1/images/resized?image_url=images/creator/e92bbfaa-99f4-48ec-8025-725305522498/f146bc75-1c11-4817-8437-a7abac245bb0.jpeg&width=240",
+    anh: ["https://prd.resource-api.lit.link/v1/images/resized?image_url=images/creator/e92bbfaa-99f4-48ec-8025-725305522498/f146bc75-1c11-4817-8437-a7abac245bb0.jpeg&width=240"],
+    nguon: "https://lit.link/nozomiarimura",
+    tenNguon: "lit.link ch\u00ednh th\u1ee9c c\u1ee7a Nozomi Arimura (\u0111\u01b0\u1ee3c li\u00ean k\u1ebft t\u1eeb Instagram ch\u00ednh th\u1ee9c @nozomi__arimura)"
+  },
+  "mihiro-1": {
+    avatar: "https://www.m-voice.co.jp/img/talent/mihiro_photo.jpg",
+    anh: ["https://www.m-voice.co.jp/img/common/top_mihiro_photo.jpg", "https://www.m-voice.co.jp/img/news/2026tour.jpg", "https://www.m-voice.co.jp/img/news/202607okinawa.jpg", "https://www.m-voice.co.jp/img/news/202607event.jpg"],
+    nguon: "https://www.m-voice.co.jp/talent/mihiro/index.html",
+    tenNguon: "m-voice \u2014 trang h\u1ed3 s\u01a1 ch\u00ednh th\u1ee9c c\u1ee7a c\u00f4ng ty qu\u1ea3n l\u00fd (Kaneko Mihiro / \u91d1\u5b50\u307f\u3072\u308d)"
+  },
+  "aika-1": {
+    avatar: "https://prd.resource-api.lit.link/v1/images/resized?image_url=images/creator/0d132540-c41f-434a-b068-c12832bfe86e/3bb2fd72-d87d-4be8-997e-2d433e3332d4.jpeg&width=240",
+    anh: ["https://prd.resource-api.lit.link/v1/images/resized?image_url=images/creator/0d132540-c41f-434a-b068-c12832bfe86e/3bb2fd72-d87d-4be8-997e-2d433e3332d4.jpeg&width=240"],
+    nguon: "https://lit.link/ONEOFF0109",
+    tenNguon: "AIKA Official lit.link (li\u00ean k\u1ebft t\u1eeb Instagram ch\u00ednh th\u1ee9c @aika_honmono)"
   },
 };
