@@ -469,5 +469,28 @@ window.ANH_CHINH_THUC =
   "anh": [],
   "nguon": "https://summit-pro.sakuraweb.com/",
   "tenNguon": "SUMMIT (サミット) — trang chính thức công ty quản lý"
+ },
+ "iori-furukawa": {
+  "avatar": "https://livedoor.blogimg.jp/kogawa_iori/imgs/6/3/63a060ae.jpg",
+  "anh": [
+   "https://livedoor.blogimg.jp/kogawa_iori/imgs/3/1/31ed8370.jpg",
+   "https://livedoor.blogimg.jp/kogawa_iori/imgs/f/f/ff7bb89f.jpg",
+   "https://livedoor.blogimg.jp/kogawa_iori/imgs/1/1/11811ef1.jpg",
+   "https://livedoor.blogimg.jp/kogawa_iori/imgs/c/a/cab511f1.jpg"
+  ],
+  "nguon": "http://blog.livedoor.jp/kogawa_iori/",
+  "tenNguon": "Blog chính thức (Livedoor) của 古川いおり"
+ },
+ "rin-azuma": {
+  "avatar": "https://cdn.faleno.net/dahlia/wp-content/uploads/2021/02/azuma_top.jpg?resize=520:*&output-quality=60",
+  "anh": [],
+  "nguon": "https://dahlia-av.jp/actress/rin_azuma/",
+  "tenNguon": "DAHLIA"
+ },
+ "hikaru-aoyama1": {
+  "avatar": "https://s.butterfly.fan/official-profile/profile/6/YALOlt1SuIU14SNK3pSeup1vA0NccTnP68ZlkZm7.jpg",
+  "anh": [],
+  "nguon": "https://official.01familia.jp/talent/aoyamahikaru",
+  "tenNguon": "01familia"
  }
 };

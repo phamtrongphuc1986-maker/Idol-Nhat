@@ -2,12 +2,12 @@
 
 // ===== Cấu hình thư viện ảnh/video =====
 // 2 dòng thư viện (user chốt 12/11/2026): dòng 1 = mùa hè + mùa thu, dòng 2 = áo tắm/bikini + nude.
-// Mỗi tiền tố 5 ô -> 2 dòng x 10 ô = 20 ảnh mỗi hồ sơ. KHÔNG còn nhóm mùa đông.
+// Số ô theo tiền tố: mua-he 5, mua-thu 5, do-boi 6 (user thêm ô bikini thứ 6 cho ảnh đẹp nhất 12/11), nude 5 -> tổng 21 ô. KHÔNG còn nhóm mùa đông.
 const NHOM_TRANG_PHUC = [
   { key: "mua-he-thu", ten: "Trang phục mùa hè / Trang phục mùa thu", tienTo: ["mua-he", "mua-thu"] },
   { key: "do-boi-nude", ten: "Trang phục áo tắm / Bikini / Nude", tienTo: ["do-boi", "nude"] }
 ];
-const ANH_MOI_TIEN_TO = 5; // mỗi tiền tố (mua-he, mua-thu, do-boi, nude) có 5 ô
+const SO_O_TIEN_TO = { "mua-he": 5, "mua-thu": 5, "do-boi": 6, "nude": 5 };
 const VIDEO_TOI_DA = 6; // dò video-01 .. video-06
 const DUOI_ANH = ["jpg", "png", "webp"];
 const DUOI_VIDEO = ["mp4", "webm"];
@@ -299,7 +299,7 @@ function hienChiTiet(slug) {
       '<p style="font-size:.85em;opacity:.75;margin:2px 0 10px">Ảnh hiển thị trực tiếp từ nguồn chính thức: <a href="' + ANH_CHINH_THUC[p.slug].nguon + '" target="_blank" rel="noopener noreferrer">' + (ANH_CHINH_THUC[p.slug].tenNguon || "trang chính thức") + " ↗</a></p>" : "") +
     (p.hoSoCoBan ?
       '<p class="trong">Hồ sơ cơ bản chưa có thư viện ảnh/video.</p>' :
-      "<h3>🖼️ Thư viện ảnh (20 ảnh)</h3>" +
+      "<h3>🖼️ Thư viện ảnh (21 ảnh)</h3>" +
       '<div id="thu-vien"></div>' +
       "<h3>🎬 Video</h3>" +
       '<div id="khung-video" class="khung-video"><p class="trong">Đang kiểm tra video...</p></div>');
@@ -335,14 +335,15 @@ function hienChiTiet(slug) {
     });
   }
 
-  // Thư viện 20 ảnh + video: chỉ hồ sơ đầy đủ mới dò (hồ sơ cơ bản chưa có thư mục media)
+  // Thư viện 21 ảnh + video: chỉ hồ sơ đầy đủ mới dò (hồ sơ cơ bản chưa có thư mục media)
   if (!p.hoSoCoBan) {
   const thuVien = document.getElementById("thu-vien");
   NHOM_TRANG_PHUC.forEach(function (nhom) {
-    // Danh sách ô của dòng: mỗi tiền tố 5 ô (vd mua-he-01..05 rồi mua-thu-01..05)
+    // Danh sách ô của dòng theo số ô từng tiền tố (vd mua-he-01..05 rồi mua-thu-01..05; do-boi có 6 ô)
     const cacTen = [];
     nhom.tienTo.forEach(function (tt) {
-      for (let i = 1; i <= ANH_MOI_TIEN_TO; i++) cacTen.push(tt + "-" + String(i).padStart(2, "0"));
+      const soO = SO_O_TIEN_TO[tt] || 5;
+      for (let i = 1; i <= soO; i++) cacTen.push(tt + "-" + String(i).padStart(2, "0"));
     });
     const tongO = cacTen.length;
     const muc = document.createElement("section");
